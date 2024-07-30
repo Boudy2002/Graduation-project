@@ -1,0 +1,9 @@
+Topic : Healthcare
+Software : Mobile app
+Lang : Flutter
+about : disease detection and treatment
+Subtopic : 
+	1- machine learning
+	2- chatbot
+data : blockchain
+

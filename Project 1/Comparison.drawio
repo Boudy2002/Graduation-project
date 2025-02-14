@@ -1,0 +1,673 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram name="Page-1" id="bd83a815-5ea8-2e97-e5ec-87c9f400f2fa">
+    <mxGraphModel dx="1091" dy="638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" style=";html=1;" />
+        <mxCell id="1" style=";html=1;" parent="0" />
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-112" value="Assets" style="childLayout=tableLayout;recursiveResize=0;strokeColor=#98bf21;fillColor=#A7C942;shadow=1;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="300" y="30" width="799" height="1620" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-113" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;strokeColor=inherit;fillColor=#ffffff;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry width="799" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-143" value="Apps" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=#A7C942;align=center;fontStyle=1;fontColor=#FFFFFF;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-113">
+          <mxGeometry width="133" height="38" as="geometry">
+            <mxRectangle width="133" height="38" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-138" value="Feature" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=#A7C942;align=center;fontStyle=1;fontColor=#FFFFFF;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-113">
+          <mxGeometry x="133" width="133" height="38" as="geometry">
+            <mxRectangle width="133" height="38" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-133" value="Input" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=#A7C942;align=center;fontStyle=1;fontColor=#FFFFFF;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-113">
+          <mxGeometry x="266" width="133" height="38" as="geometry">
+            <mxRectangle width="133" height="38" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-114" value="Output" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=#A7C942;align=center;fontStyle=1;fontColor=#FFFFFF;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-113">
+          <mxGeometry x="399" width="133" height="38" as="geometry">
+            <mxRectangle width="133" height="38" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-115" value="Technology" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=#A7C942;align=center;fontStyle=1;fontColor=#FFFFFF;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-113">
+          <mxGeometry x="532" width="134" height="38" as="geometry">
+            <mxRectangle width="134" height="38" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-116" value="Concept" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=#A7C942;align=center;fontStyle=1;fontColor=#FFFFFF;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-113">
+          <mxGeometry x="666" width="133" height="38" as="geometry">
+            <mxRectangle width="133" height="38" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-117" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;strokeColor=inherit;fillColor=#ffffff;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="38" width="799" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-144" value="GoSkills" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-117">
+          <mxGeometry width="133" height="111" as="geometry">
+            <mxRectangle width="133" height="111" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-139" value="Mobile learning, gamified content, custom course creation, reporting, analytics, and performance tracking" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-117">
+          <mxGeometry x="133" width="133" height="111" as="geometry">
+            <mxRectangle width="133" height="111" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-134" value="User profiles, course content, learner assessments" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-117">
+          <mxGeometry x="266" width="133" height="111" as="geometry">
+            <mxRectangle width="133" height="111" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-118" value="Certificates, progress reports, personalized learning paths, course completion data" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-117">
+          <mxGeometry x="399" width="133" height="111" as="geometry">
+            <mxRectangle width="133" height="111" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-119" value="Cloud-based platform with API integrations (e.g., HR tools)" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-117">
+          <mxGeometry x="532" width="134" height="111" as="geometry">
+            <mxRectangle width="134" height="111" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-120" value="Gamification, mobile-first learning, personalized learning" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-117">
+          <mxGeometry x="666" width="133" height="111" as="geometry">
+            <mxRectangle width="133" height="111" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-121" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="149" width="799" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-145" value="360Learning" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-121">
+          <mxGeometry width="133" height="109" as="geometry">
+            <mxRectangle width="133" height="109" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-140" value="Collaborative learning, course authoring, personalized learning paths, social learning capabilities" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-121">
+          <mxGeometry x="133" width="133" height="109" as="geometry">
+            <mxRectangle width="133" height="109" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-135" value="User data, created courses, team/learner data" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-121">
+          <mxGeometry x="266" width="133" height="109" as="geometry">
+            <mxRectangle width="133" height="109" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-122" value="Custom training plans, completion reports, feedback loops" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-121">
+          <mxGeometry x="399" width="133" height="109" as="geometry">
+            <mxRectangle width="133" height="109" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-123" value="Cloud-based platform, social tools" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-121">
+          <mxGeometry x="532" width="134" height="109" as="geometry">
+            <mxRectangle width="134" height="109" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-124" value="Social learning, collaboration, team learning, peer-based education" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-121">
+          <mxGeometry x="666" width="133" height="109" as="geometry">
+            <mxRectangle width="133" height="109" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-125" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=0;strokeColor=inherit;fillColor=#ffffff;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="258" width="799" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-146" value="Absorb LMS" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;fontStyle=0;align=center;whiteSpace=wrap;html=1;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-125">
+          <mxGeometry width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-141" value="Course management, e-learning tools, mobile learning, gamification" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;fontStyle=0;align=center;whiteSpace=wrap;html=1;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-125">
+          <mxGeometry x="133" width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-136" value="Learner information, content uploads, assessments" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;fontStyle=0;align=center;whiteSpace=wrap;html=1;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-125">
+          <mxGeometry x="266" width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-126" value="Progress tracking, certificates, feedback" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;fontStyle=0;align=center;whiteSpace=wrap;html=1;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-125">
+          <mxGeometry x="399" width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-127" value="SCORM-compliant, API integrations, mobile platform" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;fontStyle=0;align=center;whiteSpace=wrap;html=1;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-125">
+          <mxGeometry x="532" width="134" height="80" as="geometry">
+            <mxRectangle width="134" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-128" value="Gamification, mobile learning​" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;fontStyle=0;align=center;whiteSpace=wrap;html=1;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-125">
+          <mxGeometry x="666" width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-129" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="338" width="799" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-147" value="Axonify" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-129">
+          <mxGeometry width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-142" value="Microlearning, personalized learning paths, employee engagement tools" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-129">
+          <mxGeometry x="133" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-137" value="User preferences, skill gaps, learning behaviors" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-129">
+          <mxGeometry x="266" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-130" value="Learning content, engagement scores, reports" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-129">
+          <mxGeometry x="399" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-131" value="Cloud-based, AI-powered content" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-129">
+          <mxGeometry x="532" width="134" height="79" as="geometry">
+            <mxRectangle width="134" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-132" value="Microlearning, gamification, personalized learning" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-129">
+          <mxGeometry x="666" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-148" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="417" width="799" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-149" value="Canvas LMS" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-148">
+          <mxGeometry width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-150" value="Course authoring, grading, assignments, assessments, social learning" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-148">
+          <mxGeometry x="133" width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-151" value="User data, course materials, assignments" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-148">
+          <mxGeometry x="266" width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-152" value="Grade reports, progress tracking, student interactions" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-148">
+          <mxGeometry x="399" width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-153" value="Cloud, open-source integrations" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-148">
+          <mxGeometry x="532" width="134" height="80" as="geometry">
+            <mxRectangle width="134" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-154" value="Collaborative learning, social learning" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-148">
+          <mxGeometry x="666" width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-155" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="497" width="799" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-156" value="Continu" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-155">
+          <mxGeometry width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-157" value="Personalized learning paths, user-generated content, content curation, reporting" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-155">
+          <mxGeometry x="133" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-158" value="User preferences, company goals, learning content" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-155">
+          <mxGeometry x="266" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-159" value="Progress reports, personalized learning paths" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-155">
+          <mxGeometry x="399" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-160" value="Cloud-based, mobile-enabled" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-155">
+          <mxGeometry x="532" width="134" height="79" as="geometry">
+            <mxRectangle width="134" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-161" value="Personalized learning, social learning" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-155">
+          <mxGeometry x="666" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-162" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="576" width="799" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-163" value="D2L" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-162">
+          <mxGeometry width="133" height="90" as="geometry">
+            <mxRectangle width="133" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-164" value="Comprehensive learning tools, social learning, video-based learning, content curation" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-162">
+          <mxGeometry x="133" width="133" height="90" as="geometry">
+            <mxRectangle width="133" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-165" value="Learner data, course content" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-162">
+          <mxGeometry x="266" width="133" height="90" as="geometry">
+            <mxRectangle width="133" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-166" value="Customizable learning paths, feedback, assessments" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-162">
+          <mxGeometry x="399" width="133" height="90" as="geometry">
+            <mxRectangle width="133" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-167" value="Cloud, integrations with third-party tools" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-162">
+          <mxGeometry x="532" width="134" height="90" as="geometry">
+            <mxRectangle width="134" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-168" value="Personalized learning, video learning" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-162">
+          <mxGeometry x="666" width="133" height="90" as="geometry">
+            <mxRectangle width="133" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-169" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="666" width="799" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-170" value="Degreed" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-169">
+          <mxGeometry width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-171" value="Learning and development tracking, content curation, skill tracking" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-169">
+          <mxGeometry x="133" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-172" value="User activity, learning content, performance data" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-169">
+          <mxGeometry x="266" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-173" value="Skills mapping, personalized learning journeys, certifications" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-169">
+          <mxGeometry x="399" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-174" value="Data analytics, cloud-based system" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-169">
+          <mxGeometry x="532" width="134" height="79" as="geometry">
+            <mxRectangle width="134" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-175" value="Continuous learning, skill development​&lt;span data-state=&quot;closed&quot; class=&quot;&quot;&gt;&lt;div class=&quot;relative inline-flex items-center&quot;&gt;&lt;a class=&quot;flex h-[22px] items-center rounded-xl px-2 text-[0.5em] !font-medium uppercase bg-[#f4f4f4] !text-token-text-secondary hover:bg-token-text-primary hover:!text-token-main-surface-secondary dark:bg-token-main-surface-secondary dark:hover:bg-token-text-primary group relative top-[-0.094rem]&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https://www.goskills.com/lms&quot;&gt;&lt;span class=&quot;truncate&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-169">
+          <mxGeometry x="666" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-176" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="745" width="799" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-177" value="Docebo" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-176">
+          <mxGeometry width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-178" value="LMS features, social learning tools, gamification, mobile learning" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-176">
+          <mxGeometry x="133" width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-179" value="User information, learning content, assessments" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-176">
+          <mxGeometry x="266" width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-180" value="Certificates, completion reports, personalized learning paths" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-176">
+          <mxGeometry x="399" width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-181" value="Cloud-based platform, AI-powered content recommendations" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-176">
+          <mxGeometry x="532" width="134" height="70" as="geometry">
+            <mxRectangle width="134" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-182" value="Social learning, gamification" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-176">
+          <mxGeometry x="666" width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-183" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="815" width="799" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-184" value="EdApp" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-183">
+          <mxGeometry width="133" height="99" as="geometry">
+            <mxRectangle width="133" height="99" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-185" value="Mobile-first micro-learning, gamification, content creation tools, progress tracking" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-183">
+          <mxGeometry x="133" width="133" height="99" as="geometry">
+            <mxRectangle width="133" height="99" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-186" value="User data, learning goals, content uploads" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-183">
+          <mxGeometry x="266" width="133" height="99" as="geometry">
+            <mxRectangle width="133" height="99" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-187" value="Micro-lessons, engagement reports, progress analytics" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-183">
+          <mxGeometry x="399" width="133" height="99" as="geometry">
+            <mxRectangle width="133" height="99" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-188" value="Cloud, mobile learning" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-183">
+          <mxGeometry x="532" width="134" height="99" as="geometry">
+            <mxRectangle width="134" height="99" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-189" value="Microlearning, gamification" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-183">
+          <mxGeometry x="666" width="133" height="99" as="geometry">
+            <mxRectangle width="133" height="99" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-190" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="914" width="799" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-191" value="EdCast" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-190">
+          <mxGeometry width="133" height="100" as="geometry">
+            <mxRectangle width="133" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-192" value="Content curation, micro-learning, personalized learning experiences, social learning tools" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-190">
+          <mxGeometry x="133" width="133" height="100" as="geometry">
+            <mxRectangle width="133" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-193" value="User data, company objectives, learning content" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-190">
+          <mxGeometry x="266" width="133" height="100" as="geometry">
+            <mxRectangle width="133" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-194" value="Curated content feeds, learning recommendations" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-190">
+          <mxGeometry x="399" width="133" height="100" as="geometry">
+            <mxRectangle width="133" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-195" value="Cloud-based, AI tools" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-190">
+          <mxGeometry x="532" width="134" height="100" as="geometry">
+            <mxRectangle width="134" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-196" value="Knowledge sharing, personalized learning" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-190">
+          <mxGeometry x="666" width="133" height="100" as="geometry">
+            <mxRectangle width="133" height="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-197" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="1014" width="799" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-198" value="Juno LXP" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-197">
+          <mxGeometry width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-199" value="Personalized learning paths, content curation, AI-driven learning recommendations" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-197">
+          <mxGeometry x="133" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-200" value="User preferences, organizational needs, content" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-197">
+          <mxGeometry x="266" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-201" value="Learning content suggestions, personalized paths" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-197">
+          <mxGeometry x="399" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-202" value="AI-driven platform, cloud-based" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-197">
+          <mxGeometry x="532" width="134" height="79" as="geometry">
+            <mxRectangle width="134" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-203" value="Personalized learning, AI-driven recommendations" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-197">
+          <mxGeometry x="666" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-204" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="1093" width="799" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-205" value="Learn Amp" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-204">
+          <mxGeometry width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-206" value="Learning and development tools, skill development tracking, social learning" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-204">
+          <mxGeometry x="133" width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-207" value="User profiles, company learning objectives" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-204">
+          <mxGeometry x="266" width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-208" value="Learning progress tracking, engagement scores" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-204">
+          <mxGeometry x="399" width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-209" value="Cloud-based platform, API integrations" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-204">
+          <mxGeometry x="532" width="134" height="80" as="geometry">
+            <mxRectangle width="134" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-210" value="Social learning, skill development" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-204">
+          <mxGeometry x="666" width="133" height="80" as="geometry">
+            <mxRectangle width="133" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-211" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="1173" width="799" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-212" value="LearnUpon" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-211">
+          <mxGeometry width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-213" value="Course creation, learner management, mobile access, reporting tools" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-211">
+          <mxGeometry x="133" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-214" value="Learner data, content uploads" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-211">
+          <mxGeometry x="266" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-215" value="Training progress, certificates, feedback" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-211">
+          <mxGeometry x="399" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-216" value="Cloud-based, integration-friendly" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-211">
+          <mxGeometry x="532" width="134" height="79" as="geometry">
+            <mxRectangle width="134" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-217" value="Mobile learning, enterprise-scale training" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-211">
+          <mxGeometry x="666" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-218" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="1252" width="799" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-219" value="LinkedIn Learning" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-218">
+          <mxGeometry width="133" height="90" as="geometry">
+            <mxRectangle width="133" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-220" value="Extensive course library, certifications, personalized recommendations" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-218">
+          <mxGeometry x="133" width="133" height="90" as="geometry">
+            <mxRectangle width="133" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-221" value="User interests, professional profile" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-218">
+          <mxGeometry x="266" width="133" height="90" as="geometry">
+            <mxRectangle width="133" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-222" value="Personalized course suggestions, certificates" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-218">
+          <mxGeometry x="399" width="133" height="90" as="geometry">
+            <mxRectangle width="133" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-223" value="Cloud-based, LinkedIn integration" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-218">
+          <mxGeometry x="532" width="134" height="90" as="geometry">
+            <mxRectangle width="134" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-224" value="Continuous learning, professional development" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-218">
+          <mxGeometry x="666" width="133" height="90" as="geometry">
+            <mxRectangle width="133" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-225" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="1342" width="799" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-226" value="Litmos" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-225">
+          <mxGeometry width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-227" value="Course management, gamification, reporting, mobile learning" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-225">
+          <mxGeometry x="133" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-228" value="User data, course content, assessments" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-225">
+          <mxGeometry x="266" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-229" value="Certificates, completion reports, feedback" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-225">
+          <mxGeometry x="399" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-230" value="Cloud-based, mobile access" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-225">
+          <mxGeometry x="532" width="134" height="79" as="geometry">
+            <mxRectangle width="134" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-231" value="Gamification, mobile learning" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-225">
+          <mxGeometry x="666" width="133" height="79" as="geometry">
+            <mxRectangle width="133" height="79" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-232" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="1421" width="799" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-233" value="TalentLMS" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-232">
+          <mxGeometry width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-234" value="LMS tools, gamified learning, mobile learning, automated training flows" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-232">
+          <mxGeometry x="133" width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-235" value="User profiles, learning content, assessments" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-232">
+          <mxGeometry x="266" width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-236" value="Certificates, progress tracking, personalized learning journeys" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-232">
+          <mxGeometry x="399" width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-237" value="Cloud-based platform, mobile app" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-232">
+          <mxGeometry x="532" width="134" height="70" as="geometry">
+            <mxRectangle width="134" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-238" value="Gamification, mobile learning​&lt;span data-state=&quot;closed&quot; class=&quot;&quot;&gt;&lt;div class=&quot;relative inline-flex items-center&quot;&gt;&lt;a class=&quot;flex h-[22px] items-center rounded-xl px-2 text-[0.5em] !font-medium uppercase bg-[#f4f4f4] !text-token-text-secondary hover:bg-token-text-primary hover:!text-token-main-surface-secondary dark:bg-token-main-surface-secondary dark:hover:bg-token-text-primary group relative top-[-0.094rem]&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https://www.selecthub.com/lms-software/goskills-vs-adobe-learning-manager/&quot;&gt;&lt;span class=&quot;truncate&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-232">
+          <mxGeometry x="666" width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-239" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="1491" width="799" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-240" value="Tovuti" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-239">
+          <mxGeometry width="133" height="59" as="geometry">
+            <mxRectangle width="133" height="59" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-241" value="Course authoring, certifications, social learning, reporting" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-239">
+          <mxGeometry x="133" width="133" height="59" as="geometry">
+            <mxRectangle width="133" height="59" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-242" value="User data, content uploads, course feedback" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-239">
+          <mxGeometry x="266" width="133" height="59" as="geometry">
+            <mxRectangle width="133" height="59" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-243" value="Learning progress, certificates, analytics" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-239">
+          <mxGeometry x="399" width="133" height="59" as="geometry">
+            <mxRectangle width="133" height="59" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-244" value="Cloud-based, API integrations" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-239">
+          <mxGeometry x="532" width="134" height="59" as="geometry">
+            <mxRectangle width="134" height="59" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-245" value="Social learning, gamification" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=inherit;whiteSpace=wrap;html=1;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-239">
+          <mxGeometry x="666" width="133" height="59" as="geometry">
+            <mxRectangle width="133" height="59" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-246" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;dropTarget=0;collapsible=0;recursiveResize=0;expand=0;fontStyle=1;strokeColor=inherit;fillColor=#EAF2D3;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-112">
+          <mxGeometry y="1550" width="799" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-247" value="Udemy Business" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-246">
+          <mxGeometry width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-248" value="Course library, learning paths, certification, reporting" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-246">
+          <mxGeometry x="133" width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-249" value="User profile, course selection" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-246">
+          <mxGeometry x="266" width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-250" value="Personalized learning suggestions, certificates" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-246">
+          <mxGeometry x="399" width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-251" value="Cloud platform, integration tools" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-246">
+          <mxGeometry x="532" width="134" height="70" as="geometry">
+            <mxRectangle width="134" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DCmbwm_lFT-6xUDf2k78-252" value="Continuous development, enterprise learning​" style="connectable=0;recursiveResize=0;whiteSpace=wrap;html=1;strokeColor=inherit;" vertex="1" parent="DCmbwm_lFT-6xUDf2k78-246">
+          <mxGeometry x="666" width="133" height="70" as="geometry">
+            <mxRectangle width="133" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,9 +1,4 @@
-Topic : Healthcare
-Software : Mobile app
-Lang : Flutter
-about : disease detection and treatment
-Subtopic : 
-	1- machine learning
-	2- chatbot
-data : blockchain
-
+Topic: LXP
+Software: Mobile app
+Technologies: Flutter
+about: self discovery and career guidance

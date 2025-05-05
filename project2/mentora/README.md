@@ -1,6 +1,6 @@
-# mentora
+# mentora_app
 
-LXP
+A new Flutter project.
 
 ## Getting Started
 

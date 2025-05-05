@@ -27,7 +27,6 @@ class _SignUpPageState extends State<SignUpPage>{
             SizedBox(height: 30),
             ElevatedButton(
               onPressed: _validate,
-              child: Text("Login"),
               style: ElevatedButton.styleFrom(
                 padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                 textStyle: TextStyle(
@@ -37,6 +36,7 @@ class _SignUpPageState extends State<SignUpPage>{
                 ),
                 backgroundColor: Color(0xFF1D24CA),
               ),
+              child: Text("Login"),
             ),
           ]
         ),

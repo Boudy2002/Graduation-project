@@ -1,0 +1,52 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Mohamed\\.gradle\\daemon\\8.10.2\\com.example.mentora_app-mergeDebugResources-24:\\values-night-v8\\values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Mohamed\\Desktop\\Academy\\Term 8\\Graduation project 2\\mentora_app\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "from": {
+                        "startLines": "3,18",
+                        "startColumns": "4,4",
+                        "startOffsets": "175,1106",
+                        "endLines": "11,20",
+                        "endColumns": "12,12",
+                        "endOffsets": "757,1272"
+                    },
+                    "to": {
+                        "startLines": "2,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,507",
+                        "endLines": "9,12",
+                        "endColumns": "12,12",
+                        "endOffsets": "502,671"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.example.mentora_app-mergeDebugResources-24:/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Mohamed\\Desktop\\Academy\\Term 8\\Graduation project 2\\mentora_app\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "from": {
+                        "startLines": "3,-1",
+                        "startColumns": "4,-1",
+                        "startOffsets": "172,-1",
+                        "endLines": "11,-1",
+                        "endColumns": "12,-1",
+                        "endOffsets": "747,-1"
+                    },
+                    "to": {
+                        "startLines": "2,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,507",
+                        "endLines": "9,12",
+                        "endColumns": "12,12",
+                        "endOffsets": "502,671"
+                    }
+                }
+            ]
+        }
+    ]
+}

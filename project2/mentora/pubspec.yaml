@@ -51,7 +51,6 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   provider: ^6.1.5
-  tflite: ^1.1.2
   tflite_flutter: ^0.11.0
 
 dev_dependencies:
@@ -81,7 +80,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
-    - assets/onboarding_animations/
+    - assets/animations/
     - assets/ai_models/
   #   - images/a_dot_ham.jpeg
 

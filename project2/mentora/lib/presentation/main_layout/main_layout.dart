@@ -18,10 +18,25 @@ class MainLayout extends StatefulWidget {
 class _MainLayoutState extends State<MainLayout> {
 
   int selectedIndex = 0;
-  List<Widget> tabs = [Home(), Roadmap(), Community(), Profile()];
+
+  String? args;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    args ??= ModalRoute.of(context)?.settings.arguments as String?;
+    print(args);
+  }
+
 
   @override
   Widget build(BuildContext context) {
+    final List<Widget> tabs = [
+      Home(),
+      Roadmap(),
+      Community(),
+      Profile(jobTitle: args ?? "Unknown"),
+    ];
     return Scaffold(
       body: tabs[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(

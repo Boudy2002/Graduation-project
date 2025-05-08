@@ -35,7 +35,7 @@ class ConstantsManager {
     QuestionDM(
       question: "I like to organize things (files, desks/offices)",
       answers: risacAnswers,
-      type: "Enterprising",
+      type: "Conventional",
     ),
     QuestionDM(
       question: "I like to build things",
@@ -50,7 +50,7 @@ class ConstantsManager {
     QuestionDM(
       question: "I like to have clear instructions to follow",
       answers: risacAnswers,
-      type: "Enterprising",
+      type: "Conventional",
     ),
     QuestionDM(
       question: "I like to try to influence or persuade people",
@@ -80,7 +80,7 @@ class ConstantsManager {
     QuestionDM(
       question: "I wouldn't mind working 8 hours per day in an office",
       answers: risacAnswers,
-      type: "Enterprising",
+      type: "Conventional",
     ),
     QuestionDM(
       question: "I like selling things",
@@ -125,12 +125,12 @@ class ConstantsManager {
     QuestionDM(
       question: "I pay attention to details",
       answers: risacAnswers,
-      type: "Enterprising",
+      type: "Conventional",
     ),
     QuestionDM(
       question: "I like to do filing or typing",
       answers: risacAnswers,
-      type: "Enterprising",
+      type: "Conventional",
     ),
     QuestionDM(
       question: "I like to analyze things (problems/situations)",
@@ -180,7 +180,7 @@ class ConstantsManager {
     QuestionDM(
       question: "I am good at keeping records of my work",
       answers: risacAnswers,
-      type: "Enterprising",
+      type: "Conventional",
     ),
     QuestionDM(
       question: "I like to lead",
@@ -195,7 +195,7 @@ class ConstantsManager {
     QuestionDM(
       question: "I would like to work in an office",
       answers: risacAnswers,
-      type: "Enterprising",
+      type: "Conventional",
     ),
     QuestionDM(
       question: "I'm good at math",

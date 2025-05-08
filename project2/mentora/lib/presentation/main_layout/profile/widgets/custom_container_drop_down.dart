@@ -15,10 +15,7 @@ class CustomContainerDropDown extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(title, style: Theme.of(context).textTheme.labelMedium!.copyWith(
-          color: ColorsManager.blue,
-          fontWeight: FontWeight.w500
-        ),),
+        Text(title, style: Theme.of(context).textTheme.titleMedium),
         SizedBox(height: 16.h),
         Container(
           decoration: BoxDecoration(

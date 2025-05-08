@@ -7,6 +7,8 @@ import 'package:mentora_app/presentation/main_layout/home/chatbot.dart';
 import 'package:mentora_app/presentation/main_layout/main_layout.dart';
 import 'package:mentora_app/presentation/main_layout/profile/edit_profile.dart';
 import 'package:mentora_app/presentation/onBoarding/onboarding.dart';
+import 'package:mentora_app/presentation/predicted_job/occupation.dart';
+import 'package:mentora_app/presentation/predicted_job/predicted_job_result.dart';
 import 'package:mentora_app/presentation/questions/questions.dart';
 import 'package:mentora_app/presentation/quizDetails/quiz_details.dart';
 import 'package:mentora_app/presentation/results/result.dart';
@@ -23,6 +25,8 @@ class RoutesManager{
   static const String mainLayout = "/mainLayout";
   static const String chatBot = "/chatBot";
   static const String editProfile = "/editProfile";
+  static const String predictedJobResult = "/predictedJobResult";
+  static const String occupation = "/occupation";
 
   static Map<String,WidgetBuilder> routes ={
     login: (_)=> Login(),
@@ -36,5 +40,7 @@ class RoutesManager{
     mainLayout: (_) => MainLayout(),
     chatBot: (_)=> ChatBot(),
     editProfile: (_) => EditProfile(),
+    predictedJobResult:(_)=> PredictedJobResult(),
+    occupation: (_) => Occupation(),
   };
 }

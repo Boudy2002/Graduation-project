@@ -78,6 +78,16 @@ class ThemeManager {
         fontWeight: FontWeight.normal,
         color: ColorsManager.blue,
       ),
+      displayLarge: GoogleFonts.itim(
+        fontSize: 36,
+        fontWeight: FontWeight.w500,
+        color: ColorsManager.blue,
+      ),
+      headlineMedium: GoogleFonts.itim(
+        fontSize: 18,
+        fontWeight: FontWeight.w500,
+        color: ColorsManager.blue,
+      ),
     ),
     inputDecorationTheme: InputDecorationTheme(
       hintStyle: GoogleFonts.itim(
@@ -199,6 +209,16 @@ class ThemeManager {
         fontSize: 28.sp,
         fontWeight: FontWeight.normal,
         color: ColorsManager.white,
+      ),
+      displayLarge: GoogleFonts.itim(
+        fontSize: 36,
+        fontWeight: FontWeight.w500,
+        color: ColorsManager.blue,
+      ),
+      headlineMedium: GoogleFonts.itim(
+        fontSize: 18,
+        fontWeight: FontWeight.w500,
+        color: ColorsManager.blue,
       ),
     ),
     inputDecorationTheme: InputDecorationTheme(

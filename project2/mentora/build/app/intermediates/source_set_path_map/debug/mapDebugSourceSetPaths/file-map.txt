@@ -18,16 +18,17 @@ com.example.mentora_app-jetified-savedstate-1.2.1-16 C:\Users\Mohamed\.gradle\ca
 com.example.mentora_app-jetified-lifecycle-process-2.8.7-17 C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\dc3934e7b5992873779b6c0d978229f8\transformed\jetified-lifecycle-process-2.8.7\res
 com.example.mentora_app-jetified-activity-1.9.3-18 C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\f4945d9b5f034fedd21e910069a69270\transformed\jetified-activity-1.9.3\res
 com.example.mentora_app-jetified-startup-runtime-1.1.1-19 C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\ffafe5f631203f4924364ba072ee19e0\transformed\jetified-startup-runtime-1.1.1\res
-com.example.mentora_app-debug-20 C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\res
-com.example.mentora_app-main-21 C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\main\res
-com.example.mentora_app-pngs-22 C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\app\generated\res\pngs\debug
-com.example.mentora_app-resValues-23 C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\app\generated\res\resValues\debug
-com.example.mentora_app-packageDebugResources-24 C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.mentora_app-packageDebugResources-25 C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.mentora_app-debug-26 C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\app\intermediates\merged_res\debug\mergeDebugResources
-com.example.mentora_app-debug-27 C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\file_picker\intermediates\packaged_res\debug\packageDebugResources
-com.example.mentora_app-debug-28 C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\flutter_keyboard_visibility\intermediates\packaged_res\debug\packageDebugResources
-com.example.mentora_app-debug-29 C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\flutter_native_splash\intermediates\packaged_res\debug\packageDebugResources
-com.example.mentora_app-debug-30 C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug\packageDebugResources
-com.example.mentora_app-debug-31 C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\packaged_res\debug\packageDebugResources
-com.example.mentora_app-debug-32 C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\path_provider_android\intermediates\packaged_res\debug\packageDebugResources
+com.example.mentora_app-debug-20 C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\res
+com.example.mentora_app-main-21 C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\main\res
+com.example.mentora_app-pngs-22 C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\app\generated\res\pngs\debug
+com.example.mentora_app-resValues-23 C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\app\generated\res\resValues\debug
+com.example.mentora_app-packageDebugResources-24 C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.mentora_app-packageDebugResources-25 C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.mentora_app-debug-26 C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\app\intermediates\merged_res\debug\mergeDebugResources
+com.example.mentora_app-debug-27 C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\file_picker\intermediates\packaged_res\debug\packageDebugResources
+com.example.mentora_app-debug-28 C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\flutter_keyboard_visibility\intermediates\packaged_res\debug\packageDebugResources
+com.example.mentora_app-debug-29 C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\flutter_native_splash\intermediates\packaged_res\debug\packageDebugResources
+com.example.mentora_app-debug-30 C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug\packageDebugResources
+com.example.mentora_app-debug-31 C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\packaged_res\debug\packageDebugResources
+com.example.mentora_app-debug-32 C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\path_provider_android\intermediates\packaged_res\debug\packageDebugResources
+com.example.mentora_app-debug-33 C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\tflite_flutter\intermediates\packaged_res\debug\packageDebugResources

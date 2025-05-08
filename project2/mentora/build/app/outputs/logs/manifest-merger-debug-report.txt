@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 application
-INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\main\AndroidManifest.xml:2:5-33:19
-INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml
-MERGED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:5-32:19
-MERGED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:5-32:19
+INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\main\AndroidManifest.xml:2:5-33:19
+INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml
+MERGED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:5-32:19
+MERGED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:5-32:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\dc3934e7b5992873779b6c0d978229f8\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\dc3934e7b5992873779b6c0d978229f8\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.window:window:1.2.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:22:5-29:19
@@ -16,24 +16,31 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Mohamed\.gradle\ca
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\ffafe5f631203f4924364ba072ee19e0\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\d1d97c503b3a4bd9cc3718f3fd84010a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\d1d97c503b3a4bd9cc3718f3fd84010a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [org.tensorflow:tensorflow-lite:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\dfd232f4ac6d2a50e4f6897528bd9810\transformed\jetified-tensorflow-lite-2.11.0\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\dfd232f4ac6d2a50e4f6897528bd9810\transformed\jetified-tensorflow-lite-2.11.0\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\24b0f801c408f1a48abb87d2af362261\transformed\jetified-tensorflow-lite-gpu-2.11.0\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\24b0f801c408f1a48abb87d2af362261\transformed\jetified-tensorflow-lite-gpu-2.11.0\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-api:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\10bba6973eaff8e612afdd8280dfb1cf\transformed\jetified-tensorflow-lite-api-2.11.0\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-api:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\10bba6973eaff8e612afdd8280dfb1cf\transformed\jetified-tensorflow-lite-api-2.11.0\AndroidManifest.xml:10:5-20
 	android:extractNativeLibs
-		INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.15.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\68e16af6c15662845d99d29588edd163\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
 	android:name
-		INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\main\AndroidManifest.xml
 manifest
-ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\main\AndroidManifest.xml:1:1-45:12
-MERGED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\main\AndroidManifest.xml:1:1-45:12
-INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-MERGED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-15:12
-MERGED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-34:12
-MERGED from [:flutter_keyboard_visibility] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\flutter_keyboard_visibility\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
-MERGED from [:flutter_native_splash] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\flutter_native_splash\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
-MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
-MERGED from [:path_provider_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
+ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\main\AndroidManifest.xml:1:1-45:12
+MERGED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\main\AndroidManifest.xml:1:1-45:12
+INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+MERGED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-15:12
+MERGED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-34:12
+MERGED from [:flutter_keyboard_visibility] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\flutter_keyboard_visibility\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_native_splash] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\flutter_native_splash\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
+MERGED from [:tflite_flutter] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\tflite_flutter\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.fragment:fragment:1.7.1] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\cf3a986fc94dc98dab92da85e4b25558\transformed\fragment-1.7.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.activity:activity:1.9.3] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\f4945d9b5f034fedd21e910069a69270\transformed\jetified-activity-1.9.3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\f5514dcb374b97bfc540797fb8036c6b\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -61,49 +68,54 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Mohamed\.gradle\
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\d1d97c503b3a4bd9cc3718f3fd84010a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\2191f642bb5d35c54ec69e277330946c\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window.extensions.core:core:1.0.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\214b8070ae4c800f920040867b251ddc\transformed\jetified-core-1.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [org.tensorflow:tensorflow-lite:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\dfd232f4ac6d2a50e4f6897528bd9810\transformed\jetified-tensorflow-lite-2.11.0\AndroidManifest.xml:2:1-12:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\24b0f801c408f1a48abb87d2af362261\transformed\jetified-tensorflow-lite-gpu-2.11.0\AndroidManifest.xml:2:1-12:12
 MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\1841dfdc9324175fac5338109cf574de\transformed\jetified-relinker-1.4.5\AndroidManifest.xml:2:1-7:12
+MERGED from [org.tensorflow:tensorflow-lite-api:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\10bba6973eaff8e612afdd8280dfb1cf\transformed\jetified-tensorflow-lite-api-2.11.0\AndroidManifest.xml:2:1-12:12
 	package
-		INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\main\AndroidManifest.xml:1:11-69
 queries
-ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\main\AndroidManifest.xml:39:5-44:15
-MERGED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-13:15
-MERGED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-13:15
+ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\main\AndroidManifest.xml:39:5-44:15
+MERGED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-13:15
+MERGED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-13:15
 intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
-ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\main\AndroidManifest.xml:40:9-43:18
+ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\main\AndroidManifest.xml:40:9-43:18
 action#android.intent.action.PROCESS_TEXT
-ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\main\AndroidManifest.xml:41:13-72
+ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\main\AndroidManifest.xml:41:13-72
 	android:name
-		ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\main\AndroidManifest.xml:41:21-70
+		ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\main\AndroidManifest.xml:41:21-70
 data
-ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\main\AndroidManifest.xml:42:13-50
+ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\main\AndroidManifest.xml:42:13-50
 	android:mimeType
-		ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\main\AndroidManifest.xml:42:19-48
+		ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\main\AndroidManifest.xml:42:19-48
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml:6:5-66
+ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml:6:5-66
 	android:name
-		ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml:6:22-64
 uses-sdk
-INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml
-INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml
-MERGED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
-MERGED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
-MERGED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:6:5-44
-MERGED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:6:5-44
-MERGED from [:flutter_keyboard_visibility] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\flutter_keyboard_visibility\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_keyboard_visibility] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\flutter_keyboard_visibility\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_native_splash] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\flutter_native_splash\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_native_splash] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\flutter_native_splash\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml
+MERGED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:6:5-44
+MERGED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:6:5-44
+MERGED from [:flutter_keyboard_visibility] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\flutter_keyboard_visibility\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_keyboard_visibility] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\flutter_keyboard_visibility\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_native_splash] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\flutter_native_splash\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_native_splash] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\flutter_native_splash\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:tflite_flutter] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\tflite_flutter\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:tflite_flutter] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\tflite_flutter\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.7.1] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\cf3a986fc94dc98dab92da85e4b25558\transformed\fragment-1.7.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.7.1] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\cf3a986fc94dc98dab92da85e4b25558\transformed\fragment-1.7.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity:1.9.3] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\f4945d9b5f034fedd21e910069a69270\transformed\jetified-activity-1.9.3\AndroidManifest.xml:20:5-44
@@ -158,56 +170,65 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Mohamed\.gradle\cac
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\2191f642bb5d35c54ec69e277330946c\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.window.extensions.core:core:1.0.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\214b8070ae4c800f920040867b251ddc\transformed\jetified-core-1.0.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.window.extensions.core:core:1.0.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\214b8070ae4c800f920040867b251ddc\transformed\jetified-core-1.0.0\AndroidManifest.xml:5:5-44
+MERGED from [org.tensorflow:tensorflow-lite:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\dfd232f4ac6d2a50e4f6897528bd9810\transformed\jetified-tensorflow-lite-2.11.0\AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\dfd232f4ac6d2a50e4f6897528bd9810\transformed\jetified-tensorflow-lite-2.11.0\AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\24b0f801c408f1a48abb87d2af362261\transformed\jetified-tensorflow-lite-gpu-2.11.0\AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\24b0f801c408f1a48abb87d2af362261\transformed\jetified-tensorflow-lite-gpu-2.11.0\AndroidManifest.xml:7:5-8:41
 MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\1841dfdc9324175fac5338109cf574de\transformed\jetified-relinker-1.4.5\AndroidManifest.xml:5:5-43
 MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\1841dfdc9324175fac5338109cf574de\transformed\jetified-relinker-1.4.5\AndroidManifest.xml:5:5-43
+MERGED from [org.tensorflow:tensorflow-lite-api:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\10bba6973eaff8e612afdd8280dfb1cf\transformed\jetified-tensorflow-lite-api-2.11.0\AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite-api:2.11.0] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\10bba6973eaff8e612afdd8280dfb1cf\transformed\jetified-tensorflow-lite-api-2.11.0\AndroidManifest.xml:7:5-8:41
 	android:targetSdkVersion
-		INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml
+		MERGED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml
+		MERGED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml
+		MERGED from C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\android\app\src\debug\AndroidManifest.xml
 intent#action:name:android.intent.action.GET_CONTENT+data:mimeType:*/*
-ADDED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-12:18
+ADDED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-12:18
 action#android.intent.action.GET_CONTENT
-ADDED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-72
+ADDED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-72
 	android:name
-		ADDED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:21-69
+		ADDED from [:file_picker] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\file_picker\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:21-69
 provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
-ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:9-17:20
+ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:9-17:20
 	android:grantUriPermissions
-		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-47
+		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-47
 	android:authorities
-		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-74
+		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-74
 	android:exported
-		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:13-37
+		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:13-37
 	android:name
-		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-82
+		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-82
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-16:75
+ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-16:75
 	android:resource
-		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:17-72
+		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:17-72
 	android:name
-		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:17-67
+		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:17-67
 service#com.google.android.gms.metadata.ModuleDependencies
-ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:9-31:19
+ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:9-31:19
 	android:enabled
-		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:13-36
+		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:13-36
 	android:exported
-		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:22:13-37
+		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:22:13-37
 	tools:ignore
-		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:23:13-40
+		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:23:13-40
 	android:name
-		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:13-78
+		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:13-78
 intent-filter#action:name:com.google.android.gms.metadata.MODULE_DEPENDENCIES
-ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:24:13-26:29
+ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:24:13-26:29
 action#com.google.android.gms.metadata.MODULE_DEPENDENCIES
-ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:17-94
+ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:17-94
 	android:name
-		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:25-91
+		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:25-91
 meta-data#photopicker_activity:0:required
-ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:28:13-30:36
+ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:28:13-30:36
 	android:value
-		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:30:17-33
+		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:30:17-33
 	android:name
-		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:29:17-63
+		ADDED from [:image_picker_android] C:\Users\Mohamed\Desktop\Academy\Term 8\full_project\project2\mentora\build\image_picker_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:29:17-63
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\dc3934e7b5992873779b6c0d978229f8\transformed\jetified-lifecycle-process-2.8.7\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mohamed\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:24:9-32:20

@@ -11,8 +11,9 @@ import 'package:mentora_app/providers/config_provider.dart';
 import 'package:provider/provider.dart';
 
 class Profile extends StatefulWidget {
-  const Profile({super.key});
+  const Profile({super.key, this.jobTitle,});
 
+  final String? jobTitle;
   @override
   State<Profile> createState() => _ProfileState();
 }
@@ -49,7 +50,7 @@ class _ProfileState extends State<Profile> {
                           style: Theme.of(context).textTheme.labelLarge,
                         ),
                         Text(
-                          "User's job",
+                          widget.jobTitle ?? 'No Job Title Provided',
                           style: Theme.of(context).textTheme.titleMedium!
                               .copyWith(color: ColorsManager.white),
                         ),
@@ -68,16 +69,6 @@ class _ProfileState extends State<Profile> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding: REdgeInsets.symmetric(horizontal: 16),
-                child: Text(
-                  AppLocalizations.of(context)!.content,
-                  style: Theme.of(context).textTheme.labelMedium!.copyWith(
-                    color: ColorsManager.blue,
-                    fontSize: 30,
-                  ),
-                ),
-              ),
               ListTile(
                 leading: Icon(
                   Icons.favorite_outline_sharp,

@@ -2027,18 +2027,6 @@ abstract class AppLocalizations {
   /// **'Congratulations !'**
   String get congratulations;
 
-  /// No description provided for @based_on_your_selections_you_are.
-  ///
-  /// In en, this message translates to:
-  /// **'Based on your selections, you are'**
-  String get based_on_your_selections_you_are;
-
-  /// No description provided for @of_word.
-  ///
-  /// In en, this message translates to:
-  /// **'Of'**
-  String get of_word;
-
   /// No description provided for @advanced_level.
   ///
   /// In en, this message translates to:
@@ -2057,47 +2045,17 @@ abstract class AppLocalizations {
   /// **'Low Level'**
   String get low_level;
 
-  /// No description provided for @you_got.
-  ///
-  /// In en, this message translates to:
-  /// **'You got'**
-  String get you_got;
-
   /// No description provided for @questions_correct.
   ///
   /// In en, this message translates to:
   /// **'questions correct'**
   String get questions_correct;
 
-  /// No description provided for @your_score_higher_then.
-  ///
-  /// In en, this message translates to:
-  /// **'Your score higher then'**
-  String get your_score_higher_then;
-
-  /// No description provided for @of_the_people_who_have_taken_this_test.
-  ///
-  /// In en, this message translates to:
-  /// **'of the people who have taken this test.'**
-  String get of_the_people_who_have_taken_this_test;
-
-  /// No description provided for @level.
-  ///
-  /// In en, this message translates to:
-  /// **'Level'**
-  String get level;
-
   /// No description provided for @go_to_home.
   ///
   /// In en, this message translates to:
   /// **'Go to home'**
   String get go_to_home;
-
-  /// No description provided for @continue_word.
-  ///
-  /// In en, this message translates to:
-  /// **'Continue'**
-  String get continue_word;
 
   /// No description provided for @home.
   ///
@@ -2248,6 +2206,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Update Profile'**
   String get update_profile;
+
+  /// No description provided for @results_word.
+  ///
+  /// In en, this message translates to:
+  /// **'Results'**
+  String get results_word;
+
+  /// No description provided for @error_word.
+  ///
+  /// In en, this message translates to:
+  /// **'Error'**
+  String get error_word;
+
+  /// No description provided for @unexpected_error_occurred.
+  ///
+  /// In en, this message translates to:
+  /// **'An unexpected error occurred. Please try again.'**
+  String get unexpected_error_occurred;
+
+  /// No description provided for @predicting_word.
+  ///
+  /// In en, this message translates to:
+  /// **'Predicting...'**
+  String get predicting_word;
+
+  /// No description provided for @see_results_word.
+  ///
+  /// In en, this message translates to:
+  /// **'See results'**
+  String get see_results_word;
+
+  /// No description provided for @recommendation_not_available.
+  ///
+  /// In en, this message translates to:
+  /// **'Recommendation not available at this time.'**
+  String get recommendation_not_available;
+
+  /// No description provided for @of_word.
+  ///
+  /// In en, this message translates to:
+  /// **'of'**
+  String get of_word;
+
+  /// No description provided for @based_on_your_selections_you_are.
+  ///
+  /// In en, this message translates to:
+  /// **'Based on your selections you are:'**
+  String get based_on_your_selections_you_are;
+
+  /// No description provided for @you_got.
+  ///
+  /// In en, this message translates to:
+  /// **'You got'**
+  String get you_got;
+
+  /// No description provided for @your_score_higher_then.
+  ///
+  /// In en, this message translates to:
+  /// **'Your score is higher than'**
+  String get your_score_higher_then;
+
+  /// No description provided for @of_the_people_who_have_taken_this_test.
+  ///
+  /// In en, this message translates to:
+  /// **'of the people who have taken this test'**
+  String get of_the_people_who_have_taken_this_test;
+
+  /// No description provided for @level.
+  ///
+  /// In en, this message translates to:
+  /// **'Level'**
+  String get level;
+
+  /// No description provided for @continue_word.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get continue_word;
+
+  /// No description provided for @you_are_qualified_to_work_as.
+  ///
+  /// In en, this message translates to:
+  /// **'You are qualified to Work as'**
+  String get you_are_qualified_to_work_as;
+
+  /// No description provided for @no_career_predicted.
+  ///
+  /// In en, this message translates to:
+  /// **'No career predicted'**
+  String get no_career_predicted;
+
+  /// No description provided for @go_to_roadmap.
+  ///
+  /// In en, this message translates to:
+  /// **'Go to Roadmap'**
+  String get go_to_roadmap;
+
+  /// No description provided for @cannot_generate_roadmap_no_career.
+  ///
+  /// In en, this message translates to:
+  /// **'Cannot generate roadmap, no career predicted.'**
+  String get cannot_generate_roadmap_no_career;
+
+  /// No description provided for @choose_another_occupation.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose another occupation'**
+  String get choose_another_occupation;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

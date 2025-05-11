@@ -1,199 +1,179 @@
-// import 'dart:convert';
-// import 'dart:typed_data';
-// import 'package:flutter/services.dart';
-// import 'package:tflite_flutter/tflite_flutter.dart';
-//
-// class CareerPredictor {
-//   late Interpreter _interpreter;
-//   late List<String> _featureColumns;
-//   late List<double> _scalerMean;
-//   late List<double> _scalerScale;
-//   late List<String> _jobTitles;
-//
-//   Future<void> loadModel() async {
-//     // Load TFLite model
-//     _interpreter = await Interpreter.fromAsset("assets/ai_models/career_model.tflite");
-//
-//     // Load metadata JSON
-//     final metadataStr = await rootBundle.loadString("assets/ai_models/feature_metadata.json");
-//     final metadata = jsonDecode(metadataStr);
-//     _featureColumns = List<String>.from(metadata['columns']);
-//     _scalerMean = List<double>.from(metadata['scaler_mean']);
-//     _scalerScale = List<double>.from(metadata['scaler_scale']);
-//     _jobTitles = List<String>.from(metadata['job_titles']);
-//   }
-//
-//   /// Make a prediction from input data
-//   String predict(Map<String, dynamic> userInput) {
-//     final inputVector = _preprocess(userInput);
-//     final inputTensor = Float32List.fromList(inputVector).reshape([1, inputVector.length]);
-//
-//     final outputTensor = List.filled(_jobTitles.length, 0.0).reshape([1, _jobTitles.length]);
-//
-//     _interpreter.run(inputTensor, outputTensor);
-//
-//     final output = outputTensor[0];
-//     final maxIndex = output.indexWhere((v) => v == output.reduce((a, b) => a > b ? a : b));
-//
-//     return _jobTitles[maxIndex];
-//   }
-//
-//   /// Manual preprocessing (encoding + feature engineering + scaling)
-//   List<double> _preprocess(Map<String, dynamic> input) {
-//     // RIASEC binary encoding
-//     const riasecOrder = ['R', 'I', 'A', 'S', 'E', 'C'];
-//     final riasecVector = riasecOrder.map((code) => input['RIASEC'].contains(code) ? 1.0 : 0.0).toList();
-//
-//     // Base features
-//     final o = input['Big_Five_O'] * 1.0;
-//     final c = input['Big_Five_C'] * 1.0;
-//     final e = input['Big_Five_E'] * 1.0;
-//     final a = input['Big_Five_A'] * 1.0;
-//     final n = input['Big_Five_N'] * 1.0;
-//     final ps = input['Problem_Solving'] * 1.0;
-//     final ct = input['Critical_Thinking'] * 1.0;
-//
-//     final bigFive = [o, c, e, a, n];
-//     final bigFiveSum = bigFive.reduce((a, b) => a + b);
-//     final bigFiveMean = bigFiveSum / bigFive.length;
-//     final interaction = ps * ct;
-//
-//     // Polynomial interaction terms (degree=2, interaction only)
-//     final polyFeatures = <double>[];
-//     for (int i = 0; i < bigFive.length; i++) {
-//       for (int j = i + 1; j < bigFive.length; j++) {
-//         polyFeatures.add(bigFive[i] * bigFive[j]);
-//       }
-//     }
-//
-//     // Combine features
-//     final rawFeatures = [
-//       ...riasecVector,
-//       ps,
-//       ct,
-//       bigFiveSum,
-//       bigFiveMean,
-//       interaction,
-//       ...polyFeatures
-//     ];
-//
-//     // Standardization (z-score)
-//     final scaled = List<double>.generate(
-//       rawFeatures.length,
-//           (i) => (rawFeatures[i] - _scalerMean[i]) / _scalerScale[i],
-//     );
-//
-//     return scaled;
-//     }
-// }
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:lottie/lottie.dart';
+// Ensure this import path is correct for your project structure
+import 'package:mentora_app/core/assets_manager.dart';
+import 'package:mentora_app/core/colors_manager.dart';
+import 'package:mentora_app/core/routes_manager.dart';
+import 'package:mentora_app/core/widgets/custom_elevated_button.dart';
+import 'package:mentora_app/core/widgets/custom_text_button.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart'; // For localization
 
-import 'dart:convert';
-import 'dart:typed_data';
-import 'package:flutter/services.dart';
-import 'package:tflite_flutter/tflite_flutter.dart';
+class PredictedJobResult extends StatefulWidget {
+  const PredictedJobResult({super.key});
 
-class CareerPredictor {
-  late Interpreter _interpreter;
-  late List<String> _featureColumns;
-  late List<double> _scalerMean;
-  late List<double> _scalerScale;
-  late List<String> _jobTitles;
+  @override
+  State<PredictedJobResult> createState() => _PredictedJobResultState();
+}
 
-  Future<void> loadModel() async {
-    // Load TFLite model
-    _interpreter = await Interpreter.fromAsset("assets/ai_models/career_model.tflite");
+class _PredictedJobResultState extends State<PredictedJobResult> {
+  String? args; // Holds the predicted job title
 
-    // Print input/output shapes for debugging
-    print("Model input tensor shape: ${_interpreter.getInputTensor(0).shape}");
-    print("Model output tensor shape: ${_interpreter.getOutputTensor(0).shape}");
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (args == null) {
+      final routeArgs = ModalRoute.of(context)?.settings.arguments;
+      final localizations = AppLocalizations.of(context);
 
-    // Load metadata JSON
-    final metadataStr = await rootBundle.loadString("assets/ai_models/feature_metadata.json");
-    final metadata = jsonDecode(metadataStr);
-    _featureColumns = List<String>.from(metadata['columns']);
-    _scalerMean = List<double>.from((metadata['scaler_mean'] as List).map((e) => e.toDouble()));
-    _scalerScale = List<double>.from((metadata['scaler_scale'] as List).map((e) => e.toDouble()));
-    _jobTitles = List<String>.from(metadata['job_titles']);
-  }
-
-  /// Make a prediction from input data
-  String predict(Map<String, dynamic> userInput) {
-    final inputVector = _preprocess(userInput);
-
-    // Get model input/output shapes
-    final inputShape = _interpreter.getInputTensor(0).shape;
-    final outputShape = _interpreter.getOutputTensor(0).shape;
-
-    if (inputVector.length != inputShape[1]) {
-      throw Exception(
-          "Input vector length (${inputVector.length}) does not match model input shape (${inputShape[1]}).");
-    }
-
-    final inputTensor = [Float32List.fromList(inputVector)];
-    final outputTensor = List.generate(outputShape[0], (_) => List.filled(outputShape[1], 0.0));
-
-    try {
-      _interpreter.run(inputTensor, outputTensor);
-    } catch (e) {
-      print("TFLite run error: $e");
-      rethrow;
-    }
-
-    final output = outputTensor[0];
-    final maxIndex = output.indexWhere((v) => v == output.reduce((a, b) => a > b ? a : b));
-    return _jobTitles[maxIndex];
-  }
-
-  /// Manual preprocessing (encoding + feature engineering + scaling)
-  List<double> _preprocess(Map<String, dynamic> input) {
-    // RIASEC binary encoding
-    const riasecOrder = ['R', 'I', 'A', 'S', 'E', 'C'];
-    final riasecVector = riasecOrder.map((code) => input['RIASEC'].contains(code) ? 1.0 : 0.0).toList();
-
-    // Base features
-    final o = input['Big_Five_O'] * 1.0;
-    final c = input['Big_Five_C'] * 1.0;
-    final e = input['Big_Five_E'] * 1.0;
-    final a = input['Big_Five_A'] * 1.0;
-    final n = input['Big_Five_N'] * 1.0;
-    final ps = input['Problem_Solving'] * 1.0;
-    final ct = input['Critical_Thinking'] * 1.0;
-
-    final bigFive = [o, c, e, a, n];
-    final bigFiveSum = bigFive.reduce((a, b) => a + b);
-    final bigFiveMean = bigFiveSum / bigFive.length;
-    final interaction = ps * ct;
-
-    // Polynomial interaction terms (degree=2, interaction only)
-    final polyFeatures = <double>[];
-    for (int i = 0; i < bigFive.length; i++) {
-      for (int j = i + 1; j < bigFive.length; j++) {
-        polyFeatures.add(bigFive[i] * bigFive[j]);
+      if (routeArgs is String) {
+        args = routeArgs;
+      } else {
+        // Ensure 'no_career_predicted' is defined in your .arb files
+        args = localizations?.no_career_predicted ?? "No career predicted";
+        print(
+          "Warning: PredictedJobResult received null or incorrect arguments. Using fallback.",
+        );
       }
     }
+  }
 
-    // Combine features (fixed: now includes raw Big Five traits)
-    final rawFeatures = [
-      ...riasecVector,  // 6
-      ps, ct,           // 2
-      o, c, e, a, n,    // 5  ← added here
-      bigFiveSum,       // 1
-      bigFiveMean,      // 1
-      interaction,      // 1
-      ...polyFeatures   // 10
-    ];                  // Total = 6 + 2 + 5 + 1 + 1 + 1 + 10 = 26 ✅
+  @override
+  Widget build(BuildContext context) {
+    final localizations = AppLocalizations.of(context);
 
-    if (rawFeatures.length != _scalerMean.length) {
-      throw Exception(
-          "Feature count mismatch: got ${rawFeatures.length}, expected ${_scalerMean.length}");
-    }
-
-    // Standardization (z-score)
-    final scaled = List<double>.generate(
-      rawFeatures.length,
-          (i) => (rawFeatures[i] - _scalerMean[i]) / _scalerScale[i],
+    return Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: REdgeInsets.symmetric(horizontal: 24.0, vertical: 20.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      SizedBox(height: 20.h),
+                      Text(
+                        // Ensure 'congratulations' is defined in your .arb files
+                        localizations?.congratulations ?? "Congratulations!",
+                        textAlign: TextAlign.center,
+                        style: Theme.of(
+                          context,
+                        ).textTheme.headlineMedium?.copyWith(
+                          color: ColorsManager.blue,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(height: 20.h),
+                      // Corrected to use Animations.congratulations
+                      Lottie.asset(
+                        Animations.congratulations, // UPDATED LINE
+                        width: 200.w,
+                        height: 200.h,
+                        fit: BoxFit.contain,
+                        errorBuilder: (context, error, stackTrace) {
+                          print(
+                            "Error loading Lottie animation (congratulations): $error",
+                          );
+                          return Center(
+                            child: Icon(
+                              Icons.error_outline,
+                              color: Colors.red,
+                              size: 50.r,
+                            ),
+                          );
+                        },
+                      ),
+                      SizedBox(height: 28.h),
+                      Text(
+                        // Ensure 'you_are_qualified_to_work_as' is defined in your .arb files
+                        localizations?.you_are_qualified_to_work_as ??
+                            "You are qualified to Work as",
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                          color: ColorsManager.blue,
+                        ),
+                      ),
+                      SizedBox(height: 12.h),
+                      Container(
+                        padding: REdgeInsets.symmetric(
+                          horizontal: 16.w,
+                          vertical: 16.h,
+                        ),
+                        decoration: BoxDecoration(
+                          color: ColorsManager.blue.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(12.r),
+                          border: Border.all(
+                            color: ColorsManager.blue,
+                            width: 1,
+                          ),
+                        ),
+                        child: Text(
+                          args ??
+                              (localizations?.no_career_predicted ??
+                                  "No career predicted"),
+                          textAlign: TextAlign.center,
+                          style: Theme.of(
+                            context,
+                          ).textTheme.headlineSmall?.copyWith(
+                            color: ColorsManager.blue,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 40.h),
+                    ],
+                  ),
+                ),
+              ),
+              CustomElevatedButton(
+                // Ensure 'go_to_roadmap' is defined in your .arb files
+                text: localizations?.go_to_roadmap ?? "Go to Roadmap",
+                onPress: () {
+                  // Ensure 'no_career_predicted' is defined for comparison
+                  if (args != null &&
+                      args !=
+                          (localizations?.no_career_predicted ??
+                              "No career predicted")) {
+                    Navigator.pushReplacementNamed(
+                      context,
+                      RoutesManager.mainLayout,
+                      arguments: args,
+                    );
+                  } else {
+                    // Ensure 'cannot_generate_roadmap_no_career' is defined
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(
+                          localizations?.cannot_generate_roadmap_no_career ??
+                              "Cannot generate roadmap, no career predicted.",
+                        ),
+                      ),
+                    );
+                  }
+                },
+              ),
+              SizedBox(height: 16.h),
+              CustomTextButton(
+                // Ensure 'choose_another_occupation' is defined
+                text:
+                    localizations?.choose_another_occupation ??
+                    "Choose another occupation",
+                onPress: () {
+                  Navigator.pushNamed(
+                    context,
+                    RoutesManager.occupation,
+                    arguments: args,
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
     );
-
-    return scaled;
   }
 }

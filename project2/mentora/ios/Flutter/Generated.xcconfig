@@ -1,6 +1,6 @@
 // This is a generated file; do not edit or check into version control.
-FLUTTER_ROOT=C:\Users\Mohamed\flutter
-FLUTTER_APPLICATION_PATH=C:\Users\Mohamed\Desktop\Academy\Term 8\Graduation project 2\mentora_app
+FLUTTER_ROOT=C:\src\flutter
+FLUTTER_APPLICATION_PATH=C:\Users\Harak\OneDrive\Desktop\mentora-repo\Graduation-project\project2\mentora
 COCOAPODS_PARALLEL_CODE_SIGN=true
 FLUTTER_TARGET=lib\main.dart
 FLUTTER_BUILD_DIR=build

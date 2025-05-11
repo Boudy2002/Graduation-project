@@ -18,18 +18,42 @@ class BigFive {
     "Openness to Experience",
   ];
 
-  BigFive({
-    required this.userAnswers,
-  });
+  BigFive({required this.userAnswers});
 
   List<int> positives = [
-    1,3,5,7,9,11,13,15,17,19,21,23,25,27,31,33,35,37,40,41,42,43,45,47,48,50
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19,
+    21,
+    23,
+    25,
+    27,
+    31,
+    33,
+    35,
+    37,
+    40,
+    41,
+    42,
+    43,
+    45,
+    47,
+    48,
+    50,
   ];
   String e = "20";
   String a = "14";
   String c = "14";
   String n = "38";
   String o = "8";
+
   /// Calculates a map of trait to (score, max possible score)
   Map<String, (int score, int max)> calculateScores() {
     final scores = {for (var k in traitKeys) k: 0};
@@ -41,73 +65,73 @@ class BigFive {
     final counts = {for (var k in traitKeys) k: 0}; // how many Qs per trait
     for (var i = 0; i < userAnswers.length; i++) {
       final answer = userAnswers[i];
-      if((i%5)+1 == 1){
-        if(positives.contains(i+1)){
-          scores["Extroversion"] = scores["Extroversion"]! + (answerValues[answer] ?? 0);
+      if ((i % 5) + 1 == 1) {
+        if (positives.contains(i + 1)) {
+          scores["Extroversion"] =
+              scores["Extroversion"]! + (answerValues[answer] ?? 0);
           e += "+";
           e += "${answerValues[answer] ?? 0}";
-        }
-        else{
-          scores["Extroversion"] = scores["Extroversion"]! - (answerValues[answer] ?? 0);
+        } else {
+          scores["Extroversion"] =
+              scores["Extroversion"]! - (answerValues[answer] ?? 0);
           e += "-";
           e += "${answerValues[answer] ?? 0}";
         }
         counts["Extroversion"] = counts["Extroversion"]! + 1;
-      }
-      else if((i%5)+1 == 2){
-        if(positives.contains(i+1)){
-          scores["Agreeableness"] = scores["Agreeableness"]! + (answerValues[answer] ?? 0);
+      } else if ((i % 5) + 1 == 2) {
+        if (positives.contains(i + 1)) {
+          scores["Agreeableness"] =
+              scores["Agreeableness"]! + (answerValues[answer] ?? 0);
           a += "+";
           a += "${answerValues[answer] ?? 0}";
-        }
-        else{
-          scores["Agreeableness"] = scores["Agreeableness"]! - (answerValues[answer] ?? 0);
+        } else {
+          scores["Agreeableness"] =
+              scores["Agreeableness"]! - (answerValues[answer] ?? 0);
           a += "-";
           a += "${answerValues[answer] ?? 0}";
         }
         counts["Agreeableness"] = counts["Agreeableness"]! + 1;
-      }
-      else if((i%5)+1 == 3){
-        if(positives.contains(i+1)){
-          scores["Conscientiousness"] = scores["Conscientiousness"]! + (answerValues[answer] ?? 0);
+      } else if ((i % 5) + 1 == 3) {
+        if (positives.contains(i + 1)) {
+          scores["Conscientiousness"] =
+              scores["Conscientiousness"]! + (answerValues[answer] ?? 0);
           c += "+";
           c += "${answerValues[answer] ?? 0}";
-        }
-        else{
-          scores["Conscientiousness"] = scores["Conscientiousness"]! - (answerValues[answer] ?? 0);
+        } else {
+          scores["Conscientiousness"] =
+              scores["Conscientiousness"]! - (answerValues[answer] ?? 0);
           c += "-";
           c += "${answerValues[answer] ?? 0}";
         }
         counts["Conscientiousness"] = counts["Conscientiousness"]! + 1;
-      }
-      else if((i%5)+1 == 4){
-        if(positives.contains(i+1)){
-          scores["Neuroticism"] = scores["Neuroticism"]! + (answerValues[answer] ?? 0);
+      } else if ((i % 5) + 1 == 4) {
+        if (positives.contains(i + 1)) {
+          scores["Neuroticism"] =
+              scores["Neuroticism"]! + (answerValues[answer] ?? 0);
           n += "+";
           n += "${answerValues[answer] ?? 0}";
-        }
-        else{
-          scores["Neuroticism"] = scores["Neuroticism"]! - (answerValues[answer] ?? 0);
+        } else {
+          scores["Neuroticism"] =
+              scores["Neuroticism"]! - (answerValues[answer] ?? 0);
           n += "-";
           n += "${answerValues[answer] ?? 0}";
         }
         counts["Neuroticism"] = counts["Neuroticism"]! + 1;
-
-      }
-      else if((i%5)+1 == 5){
-        if(positives.contains(i+1)){
-          scores["Openness to Experience"] = scores["Openness to Experience"]! + (answerValues[answer] ?? 0);
+      } else if ((i % 5) + 1 == 5) {
+        if (positives.contains(i + 1)) {
+          scores["Openness to Experience"] =
+              scores["Openness to Experience"]! + (answerValues[answer] ?? 0);
           o += "+";
           o += "${answerValues[answer] ?? 0}";
-        }
-        else{
-          scores["Openness to Experience"] = scores["Openness to Experience"]! - (answerValues[answer] ?? 0);
+        } else {
+          scores["Openness to Experience"] =
+              scores["Openness to Experience"]! - (answerValues[answer] ?? 0);
           o += "-";
           o += "${answerValues[answer] ?? 0}";
         }
-        counts["Openness to Experience"] = counts["Openness to Experience"]! + 1;
-      }
-      else{
+        counts["Openness to Experience"] =
+            counts["Openness to Experience"]! + 1;
+      } else {
         print("yarab");
       }
     }
@@ -130,9 +154,10 @@ class BigFive {
     final scores = calculateScores();
     return {
       for (var k in traitKeys)
-        k: scores[k]!.$2 == 0
-            ? 0
-            : ((scores[k]!.$1 / scores[k]!.$2) * 100).round(),
+        k:
+            scores[k]!.$2 == 0
+                ? 0
+                : ((scores[k]!.$1 / scores[k]!.$2) * 100).round(),
     };
   }
 }

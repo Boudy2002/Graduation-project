@@ -975,12 +975,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get congratulations => 'Congratulations !';
 
   @override
-  String get based_on_your_selections_you_are => 'Based on your selections, you are';
-
-  @override
-  String get of_word => 'Of';
-
-  @override
   String get advanced_level => 'Advanced Level';
 
   @override
@@ -990,25 +984,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get low_level => 'Low Level';
 
   @override
-  String get you_got => 'You got';
-
-  @override
   String get questions_correct => 'questions correct';
 
   @override
-  String get your_score_higher_then => 'Your score higher then';
-
-  @override
-  String get of_the_people_who_have_taken_this_test => 'of the people who have taken this test.';
-
-  @override
-  String get level => 'Level';
-
-  @override
   String get go_to_home => 'Go to home';
-
-  @override
-  String get continue_word => 'Continue';
 
   @override
   String get home => 'Home';
@@ -1084,4 +1063,58 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get update_profile => 'Update Profile';
+
+  @override
+  String get results_word => 'Results';
+
+  @override
+  String get error_word => 'Error';
+
+  @override
+  String get unexpected_error_occurred => 'An unexpected error occurred. Please try again.';
+
+  @override
+  String get predicting_word => 'Predicting...';
+
+  @override
+  String get see_results_word => 'See results';
+
+  @override
+  String get recommendation_not_available => 'Recommendation not available at this time.';
+
+  @override
+  String get of_word => 'of';
+
+  @override
+  String get based_on_your_selections_you_are => 'Based on your selections you are:';
+
+  @override
+  String get you_got => 'You got';
+
+  @override
+  String get your_score_higher_then => 'Your score is higher than';
+
+  @override
+  String get of_the_people_who_have_taken_this_test => 'of the people who have taken this test';
+
+  @override
+  String get level => 'Level';
+
+  @override
+  String get continue_word => 'Continue';
+
+  @override
+  String get you_are_qualified_to_work_as => 'You are qualified to Work as';
+
+  @override
+  String get no_career_predicted => 'No career predicted';
+
+  @override
+  String get go_to_roadmap => 'Go to Roadmap';
+
+  @override
+  String get cannot_generate_roadmap_no_career => 'Cannot generate roadmap, no career predicted.';
+
+  @override
+  String get choose_another_occupation => 'Choose another occupation';
 }

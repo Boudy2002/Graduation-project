@@ -38,7 +38,7 @@ class RoutesManager{
     questions: (_)=> Questions(),
     result: (_) => Result(),
     mainLayout: (_) => MainLayout(),
-    chatBot: (_)=> ChatBot(),
+    chatBot: (_)=> Chatbot(),
     editProfile: (_) => EditProfile(),
     predictedJobResult:(_)=> PredictedJobResult(),
     occupation: (_) => Occupation(),

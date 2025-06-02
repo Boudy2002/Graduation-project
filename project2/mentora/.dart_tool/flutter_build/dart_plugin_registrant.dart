@@ -7,9 +7,11 @@
 
 import 'dart:io'; // flutter_ignore: dart_io_import.
 import 'package:file_picker/file_picker.dart';
+import 'package:google_sign_in_android/google_sign_in_android.dart';
 import 'package:image_picker_android/image_picker_android.dart';
 import 'package:path_provider_android/path_provider_android.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:google_sign_in_ios/google_sign_in_ios.dart';
 import 'package:image_picker_ios/image_picker_ios.dart';
 import 'package:path_provider_foundation/path_provider_foundation.dart';
 import 'package:file_picker/file_picker.dart';
@@ -20,6 +22,7 @@ import 'package:path_provider_linux/path_provider_linux.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:file_selector_macos/file_selector_macos.dart';
 import 'package:flutter_keyboard_visibility_macos/flutter_keyboard_visibility_macos.dart';
+import 'package:google_sign_in_ios/google_sign_in_ios.dart';
 import 'package:image_picker_macos/image_picker_macos.dart';
 import 'package:path_provider_foundation/path_provider_foundation.dart';
 import 'package:file_picker/file_picker.dart';
@@ -39,6 +42,15 @@ class _PluginRegistrant {
       } catch (err) {
         print(
           '`file_picker` threw an error: $err. '
+          'The app may not function as expected until you remove this plugin from pubspec.yaml'
+        );
+      }
+
+      try {
+        GoogleSignInAndroid.registerWith();
+      } catch (err) {
+        print(
+          '`google_sign_in_android` threw an error: $err. '
           'The app may not function as expected until you remove this plugin from pubspec.yaml'
         );
       }
@@ -67,6 +79,15 @@ class _PluginRegistrant {
       } catch (err) {
         print(
           '`file_picker` threw an error: $err. '
+          'The app may not function as expected until you remove this plugin from pubspec.yaml'
+        );
+      }
+
+      try {
+        GoogleSignInIOS.registerWith();
+      } catch (err) {
+        print(
+          '`google_sign_in_ios` threw an error: $err. '
           'The app may not function as expected until you remove this plugin from pubspec.yaml'
         );
       }
@@ -159,6 +180,15 @@ class _PluginRegistrant {
       } catch (err) {
         print(
           '`flutter_keyboard_visibility_macos` threw an error: $err. '
+          'The app may not function as expected until you remove this plugin from pubspec.yaml'
+        );
+      }
+
+      try {
+        GoogleSignInIOS.registerWith();
+      } catch (err) {
+        print(
+          '`google_sign_in_ios` threw an error: $err. '
           'The app may not function as expected until you remove this plugin from pubspec.yaml'
         );
       }

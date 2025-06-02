@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentora_app/core/assets_manager.dart';
 import 'package:mentora_app/core/colors_manager.dart';
+import 'package:mentora_app/core/dialog_utils.dart';
 import 'package:mentora_app/core/routes_manager.dart';
 import 'package:mentora_app/core/widgets/custom_button.dart';
+import 'package:mentora_app/core/widgets/custom_elevated_button.dart';
+import 'package:mentora_app/data/DM/user_dm.dart';
+import 'package:mentora_app/data/firebase/firebase_services.dart';
 import 'package:mentora_app/presentation/main_layout/profile/widgets/custom_container_drop_down.dart';
 import 'package:mentora_app/presentation/main_layout/profile/widgets/profile_pic.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -11,15 +15,15 @@ import 'package:mentora_app/providers/config_provider.dart';
 import 'package:provider/provider.dart';
 
 class Profile extends StatefulWidget {
-  const Profile({super.key, this.jobTitle,});
+  const Profile({super.key, this.jobTitle});
 
   final String? jobTitle;
+
   @override
   State<Profile> createState() => _ProfileState();
 }
 
 class _ProfileState extends State<Profile> {
-
   late ConfigProvider configProvider;
 
   @override
@@ -39,20 +43,40 @@ class _ProfileState extends State<Profile> {
             child: SafeArea(
               child: Row(
                 children: [
-                  ProfilePic(imagePath: AssetsManager.profile),
-                  SizedBox(width: 16.w),
                   Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      flex: 1,
+                      child: ProfilePic(imagePath: AssetsManager.profile)),
+                  SizedBox(width: 10.w),
+                  Expanded(
+                    flex: 3,
+                    child: Row(
                       children: [
-                        Text(
-                          "User's name",
-                          style: Theme.of(context).textTheme.labelLarge,
+                        Expanded(
+                          flex: 9,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                UserDM.currentUser!.name,
+                                style: Theme.of(context).textTheme.labelLarge,
+                              ),
+                              Text(
+                                // widget.jobTitle ?? 'No Job Title Provided',
+                                UserDM.currentUser!.jobTitle,
+                                style: Theme.of(context).textTheme.titleMedium!
+                                    .copyWith(color: ColorsManager.white),
+                              ),
+                            ],
+                          ),
                         ),
-                        Text(
-                          widget.jobTitle ?? 'No Job Title Provided',
-                          style: Theme.of(context).textTheme.titleMedium!
-                              .copyWith(color: ColorsManager.white),
+                        Expanded(
+                          flex: 1,
+                          child: IconButton(
+                            onPressed: () {
+                              logout();
+                            },
+                            icon: Icon(Icons.logout, color: ColorsManager.white,),
+                          ),
                         ),
                       ],
                     ),
@@ -62,9 +86,12 @@ class _ProfileState extends State<Profile> {
             ),
           ),
           SizedBox(height: 24.h),
-          CustomButton(text: AppLocalizations.of(context)!.edit_profile, onPress: (){
-            Navigator.pushNamed(context, RoutesManager.editProfile);
-          }),
+          CustomButton(
+            text: AppLocalizations.of(context)!.edit_profile,
+            onPress: () {
+              Navigator.pushNamed(context, RoutesManager.editProfile);
+            },
+          ),
           SizedBox(height: 24.h),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -106,17 +133,32 @@ class _ProfileState extends State<Profile> {
               children: [
                 CustomContainerDropDown(
                   title: AppLocalizations.of(context)!.language,
-                  textView: configProvider.isEnglish? "English": "عربي" ,
+                  textView: configProvider.isEnglish ? "English" : "عربي",
                   menuItems: ["English", "عربي"],
                   onChange: onLangChange,
                 ),
                 SizedBox(height: 16.h),
                 CustomContainerDropDown(
                   title: AppLocalizations.of(context)!.theme,
-                  textView: configProvider.isDark? AppLocalizations.of(context)!.dark : AppLocalizations.of(context)!.light,
-                  menuItems: [AppLocalizations.of(context)!.light, AppLocalizations.of(context)!.dark],
+                  textView:
+                      configProvider.isDark
+                          ? AppLocalizations.of(context)!.dark
+                          : AppLocalizations.of(context)!.light,
+                  menuItems: [
+                    AppLocalizations.of(context)!.light,
+                    AppLocalizations.of(context)!.dark,
+                  ],
                   onChange: onThemeChange,
                 ),
+                // SizedBox(height: 24.h),
+                // Center(
+                //   child: CustomElevatedButton(
+                //     text: "Logout",
+                //     onPress: () {
+                //       logout();
+                //     },
+                //   ),
+                // ),
               ],
             ),
           ),
@@ -125,13 +167,30 @@ class _ProfileState extends State<Profile> {
     );
   }
 
-  void onThemeChange(String? newValue){
-    ThemeMode theme = newValue == AppLocalizations.of(context)!.light? ThemeMode.light: ThemeMode.dark;
+  void onThemeChange(String? newValue) {
+    ThemeMode theme =
+        newValue == AppLocalizations.of(context)!.light
+            ? ThemeMode.light
+            : ThemeMode.dark;
     configProvider.changeAppTheme(theme);
   }
 
-  void onLangChange(String? newValue){
-    String lang = newValue == "English"? "en":"ar";
+  void onLangChange(String? newValue) {
+    String lang = newValue == "English" ? "en" : "ar";
     configProvider.changeAppLang(lang);
+  }
+
+  logout() {
+    DialogUtils.showMessageDialog(
+      context,
+      message: "Are you sure you want to logout?",
+      posAction: () async {
+        await FirebaseServices.logout().then((_) {
+          Navigator.pushNamed(context, RoutesManager.login);
+        });
+      },
+      posActionTitle: "Yes",
+      negActionTitle: "No",
+    );
   }
 }

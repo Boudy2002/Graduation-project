@@ -24,7 +24,7 @@ class MentoraApp extends StatelessWidget {
         ],
         locale: Locale(configProvider.currentLang),
         routes: RoutesManager.routes,
-        initialRoute: RoutesManager.quizzes,
+        initialRoute: RoutesManager.login,
         theme: ThemeManager.light,
         darkTheme: ThemeManager.dark,
         themeMode: configProvider.currentTheme,

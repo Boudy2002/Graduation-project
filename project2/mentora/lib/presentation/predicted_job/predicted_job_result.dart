@@ -67,7 +67,7 @@ class _PredictedJobResultState extends State<PredictedJobResult> {
                   textAlign: TextAlign.center,
                   style: Theme.of(
                     context,
-                  ).textTheme.labelLarge!.copyWith(color: ColorsManager.blue),
+                  ).textTheme.labelLarge!.copyWith(color: ColorsManager.blue, fontSize: 24),
                 ),
               ),
               Spacer(),

@@ -476,7 +476,7 @@ class _ResultState extends State<Result> {
               ),
               SizedBox(height: 20.h),
               Text(
-                "${localizations?.you_got ?? "You got"} $criticalThinkingResultDisplay ${localizations?.questions_correct ?? "questions correct"}",
+                "${localizations?.you_got} $criticalThinkingResultDisplay ${localizations!.questions_correct}",
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.titleMedium,
               ),
@@ -489,13 +489,13 @@ class _ResultState extends State<Result> {
               ),
               SizedBox(height: 16.h),
               Container(
-                padding: REdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                padding: REdgeInsets.symmetric(horizontal: 10, vertical: 8),
                 decoration: BoxDecoration(
                   color: ColorsManager.blue,
                   borderRadius: BorderRadius.circular(16.r),
                 ),
                 child: Text(
-                  "${localizations?.your_score_higher_then ?? "Your score is higher than"} 65% ${localizations?.of_the_people_who_have_taken_this_test ?? "of the people who have taken this test"}",
+                  "${localizations!.your_score_higher_then} 65% ${localizations.of_the_people_who_have_taken_this_test}",
                   textAlign: TextAlign.center,
                   style: Theme.of(
                     context,
@@ -548,13 +548,13 @@ class _ResultState extends State<Result> {
               ),
               SizedBox(height: 16.h),
               Container(
-                padding: REdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                padding: REdgeInsets.symmetric(horizontal: 10, vertical: 8),
                 decoration: BoxDecoration(
                   color: ColorsManager.blue,
                   borderRadius: BorderRadius.circular(16.r),
                 ),
                 child: Text(
-                  "${localizations?.your_score_higher_then ?? "Your score is higher than"} 65% ${localizations?.of_the_people_who_have_taken_this_test ?? "of the people who have taken this test"}",
+                  "${localizations!.your_score_higher_then} 65% ${localizations!.of_the_people_who_have_taken_this_test}",
                   textAlign: TextAlign.center,
                   style: Theme.of(
                     context,

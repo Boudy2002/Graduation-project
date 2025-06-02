@@ -192,7 +192,7 @@ class _ContinueSignupState extends State<ContinueSignup> {
                                 print(selectedGender);
                                 print(selectedRole!.searchKey);
                                 print(selectedDegree);
-                                Navigator.pushReplacementNamed(
+                                Navigator.pushNamed(
                                   context,
                                   RoutesManager.login,
                                   arguments: {'fromSignup': true},

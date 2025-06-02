@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentora_app/core/assets_manager.dart';
 import 'package:mentora_app/core/colors_manager.dart';
 import 'package:mentora_app/core/routes_manager.dart';
+import 'package:mentora_app/data/DM/user_dm.dart';
 import 'package:mentora_app/presentation/main_layout/home/widgets/course_progress.dart';
 import 'package:mentora_app/presentation/main_layout/home/widgets/gamification_item.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -20,7 +21,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      alignment: Alignment.bottomRight,
+      alignment: Alignment.bottomLeft,
       children: [
         SingleChildScrollView(
           child: Padding(
@@ -46,7 +47,7 @@ class _HomeState extends State<Home> {
                         children: [
                           SizedBox(height: 18.h),
                           Text(
-                            AppLocalizations.of(context)!.hi,
+                            "${AppLocalizations.of(context)!.hi}${UserDM.currentUser!.name}",
                             style: Theme.of(context).textTheme.titleLarge,
                           ),
                           Text(
@@ -200,7 +201,7 @@ class _HomeState extends State<Home> {
           ),
         ),
         Padding(
-          padding: REdgeInsets.all(14.0),
+          padding: REdgeInsets.all(14),
           child: FloatingActionButton(
             backgroundColor: ColorsManager.blue,
             child: Icon(Icons.chat_bubble, color: ColorsManager.white),

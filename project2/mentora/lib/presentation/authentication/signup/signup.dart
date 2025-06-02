@@ -1,8 +1,11 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentora_app/core/assets_manager.dart';
+import 'package:mentora_app/core/dialog_utils.dart';
 import 'package:mentora_app/core/routes_manager.dart';
 import 'package:mentora_app/core/widgets/custom_elevated_button.dart';
+import 'package:mentora_app/data/firebase/firebase_services.dart';
 import 'package:mentora_app/presentation/authentication/widgets/custom_row.dart';
 import 'package:mentora_app/presentation/authentication/widgets/custom_text_form_field.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -23,9 +26,28 @@ class _SignupState extends State<Signup> {
   String passwordRegex =
       r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$';
   String nameRegex = r'^[a-zA-Z ]+$';
-  String? email;
-  String? password;
-  String? name;
+
+  late TextEditingController emailController;
+  late TextEditingController nameController;
+  late TextEditingController passwordController;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    emailController = TextEditingController();
+    nameController = TextEditingController();
+    passwordController = TextEditingController();
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    emailController.dispose();
+    nameController.dispose();
+    passwordController.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -57,33 +79,41 @@ class _SignupState extends State<Signup> {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         CustomTextFormField(
+                          controller: nameController,
                           text: AppLocalizations.of(context)!.enter_your_name,
                           onValidator: (newValue) {
                             if (newValue == null || newValue.isEmpty) {
-                              return AppLocalizations.of(context)!.please_enter_your_name;
+                              return AppLocalizations.of(
+                                context,
+                              )!.please_enter_your_name;
                             } else if (!RegExp(nameRegex).hasMatch(newValue)) {
                               return AppLocalizations.of(context)!.letters_only;
                             }
-                            name = newValue;
                             return null;
                           },
                         ),
                         SizedBox(height: 16.h),
                         CustomTextFormField(
+                          controller: emailController,
                           text: AppLocalizations.of(context)!.enter_your_email,
                           onValidator: (newValue) {
                             if (newValue == null || newValue.isEmpty) {
-                              return AppLocalizations.of(context)!.please_enter_your_email;
+                              return AppLocalizations.of(
+                                context,
+                              )!.please_enter_your_email;
                             } else if (!RegExp(emailRegex).hasMatch(newValue)) {
-                              return AppLocalizations.of(context)!.please_enter_your_email;
+                              return AppLocalizations.of(
+                                context,
+                              )!.please_enter_your_email;
                             }
-                            email = newValue;
                             return null;
                           },
                         ),
                         SizedBox(height: 16.h),
                         CustomTextFormField(
-                          text: AppLocalizations.of(context)!.enter_your_password,
+                          controller: passwordController,
+                          text:
+                              AppLocalizations.of(context)!.enter_your_password,
                           isObscure: passwordObscure,
                           suffixIcon:
                               passwordObscure
@@ -92,19 +122,25 @@ class _SignupState extends State<Signup> {
                           onPress: onPasswordPress,
                           onValidator: (newValue) {
                             if (newValue == null || newValue.isEmpty) {
-                              return AppLocalizations.of(context)!.please_enter_your_password;
+                              return AppLocalizations.of(
+                                context,
+                              )!.please_enter_your_password;
                             } else if (!RegExp(
                               passwordRegex,
                             ).hasMatch(newValue)) {
-                              return AppLocalizations.of(context)!.invalid_password;
+                              return AppLocalizations.of(
+                                context,
+                              )!.invalid_password;
                             }
-                            password = newValue;
                             return null;
                           },
                         ),
                         SizedBox(height: 16.h),
                         CustomTextFormField(
-                          text: AppLocalizations.of(context)!.confirm_your_password,
+                          text:
+                              AppLocalizations.of(
+                                context,
+                              )!.confirm_your_password,
                           isObscure: rePasswordObscure,
                           suffixIcon:
                               rePasswordObscure
@@ -113,9 +149,13 @@ class _SignupState extends State<Signup> {
                           onPress: onConfirmPassword,
                           onValidator: (newValue) {
                             if (newValue == null || newValue.isEmpty) {
-                              return AppLocalizations.of(context)!.please_confirm_your_password;
-                            } else if (newValue != password) {
-                              return AppLocalizations.of(context)!.passwords_do_not_match;
+                              return AppLocalizations.of(
+                                context,
+                              )!.please_confirm_your_password;
+                            } else if (newValue != passwordController.text) {
+                              return AppLocalizations.of(
+                                context,
+                              )!.passwords_do_not_match;
                             }
                             return null;
                           },
@@ -124,23 +164,18 @@ class _SignupState extends State<Signup> {
                         CustomElevatedButton(
                           text: "SignUp",
                           onPress: () {
-                            if(formKey.currentState!.validate()){
-                              print(name);
-                              print(email);
-                              print(password);
-                              Navigator.pushNamed(
-                                context,
-                                RoutesManager.continueSignup,
-                              );
-                            }
+                            register();
                           },
                         ),
                         SizedBox(height: 24.h),
                         CustomRow(
-                          text: AppLocalizations.of(context)!.already_have_an_account,
+                          text:
+                              AppLocalizations.of(
+                                context,
+                              )!.already_have_an_account,
                           buttonText: AppLocalizations.of(context)!.login,
                           onPress: () {
-                            Navigator.pushNamed(context, RoutesManager.login,);
+                            Navigator.pushNamed(context, RoutesManager.login);
                           },
                         ),
                       ],
@@ -153,6 +188,53 @@ class _SignupState extends State<Signup> {
         ),
       ),
     );
+  }
+
+  void register() async {
+    try {
+      if (!formKey.currentState!.validate()) return;
+      DialogUtils.showLoadingDialog(context: context);
+      await FirebaseServices.register(
+        emailController.text,
+        passwordController.text,
+        nameController.text,
+      );
+      DialogUtils.hideDialog(context);
+      DialogUtils.showMessageDialog(
+        context,
+        message: "register successfully",
+        posActionTitle: "ok",
+        posAction: () {
+          print(nameController.text);
+          print(emailController.text);
+          print(passwordController.text);
+          Navigator.pop(context);
+          Navigator.pushNamed(context, RoutesManager.continueSignup);
+        },
+      );
+    } on FirebaseAuthException catch (e) {
+      DialogUtils.hideDialog(context);
+      if (e.code == 'weak-password') {
+        DialogUtils.showMessageDialog(
+          context,
+          message: 'The password provided is too weak.',
+          posAction: () {
+            Navigator.pop(context);
+          },
+        );
+      } else if (e.code == 'email-already-in-use') {
+        DialogUtils.showMessageDialog(
+          context,
+          message: 'The account already exists for that email.',
+          posActionTitle: "Try Again",
+          posAction: () {
+            Navigator.pop(context);
+          },
+        );
+      }
+    } catch (e) {
+      DialogUtils.showMessageDialog(context, message: e.toString());
+    }
   }
 
   void onPasswordPress() {

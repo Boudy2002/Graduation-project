@@ -1,5 +1,10 @@
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'community/models/chat_message.dart';
+import 'community/screens/chat_screen.dart';
+import 'community/services/chat_service.dart';
 
 class Community extends StatefulWidget {
   const Community({super.key});
@@ -9,18 +14,8 @@ class Community extends StatefulWidget {
 }
 
 class _CommunityState extends State<Community> {
-  final List<Map<String, String>> messages = [
-    {
-      'user': 'Michael Tran',
-      'text': 'Anyone knows how to start the server?!',
-      'profile': 'assets/images/profile.png',
-    },
-    {
-      'user': 'Kristen Decastro',
-      'text': 'Hey Michael. Navigate to the ESD3 page and choose the server.',
-      'profile': 'assets/images/profile.png',
-    },
-  ];
+  final ChatService _chatService = ChatService();
+  final user = FirebaseAuth.instance.currentUser!;
 
   final TextEditingController _messageController = TextEditingController();
   List<Course> courses = [
@@ -38,16 +33,17 @@ class _CommunityState extends State<Community> {
   }
 
   void sendMessage() {
-    if (_messageController.text.isNotEmpty) {
-      setState(() {
-        messages.add({
-          'user': 'You',
-          'text': _messageController.text,
-          'profile': 'assets/images/profile.png',
-        });
-        _messageController.clear();
-      });
-    }
+    if (_messageController.text.trim().isEmpty) return;
+
+    final newMessage = ChatMessage(
+      senderId: user.uid,
+      senderName: user.displayName ?? 'Anonymous',
+      text: _messageController.text.trim(),
+      timestamp: DateTime.now(),
+    );
+
+    _chatService.sendMessage('community_rooms/general/chats', newMessage);
+    _messageController.clear();
   }
 
   @override
@@ -112,57 +108,62 @@ class _CommunityState extends State<Community> {
             ),
           ),
           Expanded(
-            child: ListView.builder(
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-              itemCount: messages.length,
-              itemBuilder: (context, index) {
-                final message = messages[index];
-                final isUser = message['user'] == 'You';
-                return Align(
-                  alignment:
-                  isUser ? Alignment.centerRight : Alignment.centerLeft,
-                  child: Container(
-                    margin: EdgeInsets.symmetric(vertical: 5),
-                    padding: EdgeInsets.all(12),
-                    decoration: BoxDecoration(
-                      color: isUser ? Color(0xFF1D24CA) : Colors.grey[200],
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: Column(
-                      crossAxisAlignment:
-                      isUser
-                          ? CrossAxisAlignment.end
-                          : CrossAxisAlignment.start,
-                      children: [
-                        if (!isUser)
-                          Row(
-                            children: [
-                              CircleAvatar(
-                                backgroundImage: AssetImage(
-                                  message['profile']!,
-                                ),
-                                radius: 15,
-                              ),
-                              SizedBox(width: 8),
-                              Text(
-                                message['user']!,
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.black54,
-                                ),
-                              ),
-                            ],
-                          ),
-                        SizedBox(height: 5),
-                        Text(
-                          message['text']!,
-                          style: TextStyle(
-                            color: isUser ? Colors.white : Colors.black,
-                          ),
+            child: StreamBuilder<List<ChatMessage>>(
+              stream: _chatService.getMessages('community_rooms/general/chats'),
+              builder: (context, snapshot) {
+                if (!snapshot.hasData) {
+                  return const Center(child: CircularProgressIndicator());
+                }
+                final messages = snapshot.data!;
+                return ListView.builder(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                  itemCount: messages.length,
+                  itemBuilder: (context, index) {
+                    final message = messages[index];
+                    final isUser = message.senderId == user.uid;
+
+                    return Align(
+                      alignment: isUser ? Alignment.centerRight : Alignment.centerLeft,
+                      child: Container(
+                        margin: const EdgeInsets.symmetric(vertical: 5),
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: isUser ? const Color(0xFF1D24CA) : Colors.grey[200],
+                          borderRadius: BorderRadius.circular(15),
                         ),
-                      ],
-                    ),
-                  ),
+                        child: Column(
+                          crossAxisAlignment:
+                          isUser ? CrossAxisAlignment.end : CrossAxisAlignment.start,
+                          children: [
+                            if (!isUser)
+                              Row(
+                                children: [
+                                  const CircleAvatar(
+                                    backgroundImage: AssetImage('assets/images/profile.png'),
+                                    radius: 15,
+                                  ),
+                                  const SizedBox(width: 8),
+                                  Text(
+                                    message.senderName,
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black54,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            const SizedBox(height: 5),
+                            Text(
+                              message.text,
+                              style: TextStyle(
+                                color: isUser ? Colors.white : Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
                 );
               },
             ),

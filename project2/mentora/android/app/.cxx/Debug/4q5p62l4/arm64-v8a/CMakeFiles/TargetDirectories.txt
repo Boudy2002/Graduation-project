@@ -1,0 +1,2 @@
+C:/Users/Mohamed/Desktop/Academy/Term 8/Graduation project 2/mentora_app/android/app/.cxx/Debug/4q5p62l4/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/Mohamed/Desktop/Academy/Term 8/Graduation project 2/mentora_app/android/app/.cxx/Debug/4q5p62l4/arm64-v8a/CMakeFiles/rebuild_cache.dir

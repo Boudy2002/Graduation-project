@@ -8,9 +8,10 @@ import 'package:mentora_app/core/widgets/custom_button.dart';
 import 'package:mentora_app/core/widgets/custom_elevated_button.dart';
 import 'package:mentora_app/data/DM/user_dm.dart';
 import 'package:mentora_app/data/firebase/firebase_services.dart';
+import 'package:mentora_app/l10n/app_localizations.dart';
 import 'package:mentora_app/presentation/main_layout/profile/widgets/custom_container_drop_down.dart';
 import 'package:mentora_app/presentation/main_layout/profile/widgets/profile_pic.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:mentora_app/providers/config_provider.dart';
 import 'package:provider/provider.dart';
 

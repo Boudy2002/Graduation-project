@@ -5,9 +5,11 @@ import 'package:mentora_app/core/constants_manager.dart';
 import 'package:mentora_app/core/routes_manager.dart';
 import 'package:mentora_app/core/widgets/custom_elevated_button.dart';
 import 'package:mentora_app/data/DM/quiz_dm.dart';
+import 'package:mentora_app/data/DM/user_dm.dart';
+import 'package:mentora_app/l10n/app_localizations.dart';
 import 'package:mentora_app/presentation/Quizzes/widgets/quiz_container.dart';
 import 'package:mentora_app/presentation/results/result.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Quizzes extends StatefulWidget {
   const Quizzes({super.key});
@@ -88,7 +90,7 @@ class _QuizzesState extends State<Quizzes> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Text(
-                    AppLocalizations.of(context)!.hi,
+                    "${AppLocalizations.of(context)!.hi}${UserDM.currentUser!.name}",
                     style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       color: ColorsManager.white,
                     ),

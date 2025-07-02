@@ -13,6 +13,12 @@ class AssetsManager{
    static const String riasec = "$base/RIASEC.png";
    static const String awsCourse = "$base/aws.png";
    static const String cyberSecurityCourse = "$base/cybersecurity.png";
+   static const String resetPassword = "$base/reset_password.png";
+   static const String lock = "$base/lock_icon.png";
+   static const String voucher200 = "$base/voucher_200.png";
+   static const String voucher500 = "$base/voucher_500.png";
+   static const String voucher1000 = "$base/voucher_1000.png";
+   static const String voucher3000 = "$base/voucher_3000.png";
 }
 
 class IconsAssets{

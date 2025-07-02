@@ -3,13 +3,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentora_app/core/colors_manager.dart';
 import 'package:mentora_app/core/routes_manager.dart';
 import 'package:mentora_app/core/widgets/custom_elevated_button.dart';
+import 'package:mentora_app/l10n/app_localizations.dart';
 import 'package:mentora_app/presentation/questions/questions.dart'; // Ensure ResultDM is here
 import 'package:mentora_app/presentation/results/result_calculations/big_five.dart';
 import 'package:mentora_app/presentation/results/result_calculations/critical_thinking.dart';
 import 'package:mentora_app/presentation/results/result_calculations/problem_solving.dart';
 import 'package:mentora_app/presentation/results/result_calculations/risac.dart';
 import 'package:mentora_app/presentation/results/widgets/user_level.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;

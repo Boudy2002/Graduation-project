@@ -6,9 +6,10 @@ import 'package:mentora_app/core/dialog_utils.dart';
 import 'package:mentora_app/core/routes_manager.dart';
 import 'package:mentora_app/core/widgets/custom_elevated_button.dart';
 import 'package:mentora_app/data/firebase/firebase_services.dart';
+import 'package:mentora_app/l10n/app_localizations.dart';
 import 'package:mentora_app/presentation/authentication/widgets/custom_row.dart';
 import 'package:mentora_app/presentation/authentication/widgets/custom_text_form_field.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Signup extends StatefulWidget {
   const Signup({super.key});
@@ -208,7 +209,6 @@ class _SignupState extends State<Signup> {
           print(nameController.text);
           print(emailController.text);
           print(passwordController.text);
-          Navigator.pop(context);
           Navigator.pushNamed(context, RoutesManager.continueSignup);
         },
       );
@@ -218,18 +218,12 @@ class _SignupState extends State<Signup> {
         DialogUtils.showMessageDialog(
           context,
           message: 'The password provided is too weak.',
-          posAction: () {
-            Navigator.pop(context);
-          },
         );
       } else if (e.code == 'email-already-in-use') {
         DialogUtils.showMessageDialog(
           context,
           message: 'The account already exists for that email.',
           posActionTitle: "Try Again",
-          posAction: () {
-            Navigator.pop(context);
-          },
         );
       }
     } catch (e) {

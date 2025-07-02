@@ -10,9 +10,10 @@ import 'package:mentora_app/core/widgets/custom_elevated_button.dart';
 import 'package:mentora_app/core/widgets/custom_text_button.dart';
 import 'package:mentora_app/data/DM/user_dm.dart';
 import 'package:mentora_app/data/firebase/firebase_services.dart';
+import 'package:mentora_app/l10n/app_localizations.dart';
 import 'package:mentora_app/presentation/authentication/widgets/custom_row.dart';
 import 'package:mentora_app/presentation/authentication/widgets/custom_text_form_field.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key, this.fromSignup = false});
@@ -133,7 +134,9 @@ class _LoginState extends State<Login> {
                             child: CustomTextButton(
                               text:
                                   AppLocalizations.of(context)!.forget_password,
-                              onPress: () {},
+                              onPress: () {
+                                Navigator.pushNamed(context, RoutesManager.resetPassword);
+                              },
                             ),
                           ),
                           SizedBox(height: 26.h),
@@ -230,7 +233,9 @@ class _LoginState extends State<Login> {
                                     AppLocalizations.of(
                                       context,
                                     )!.forget_password,
-                                onPress: () {},
+                                onPress: () {
+                                  Navigator.pushNamed(context, RoutesManager.resetPassword);
+                                },
                               ),
                             ),
                             CustomElevatedButton(
@@ -325,7 +330,6 @@ class _LoginState extends State<Login> {
         message: "login successfully",
         posActionTitle: "ok",
         posAction: () {
-          Navigator.pop(context);
           Navigator.pushNamed(context, RoutesManager.onboarding);
         },
       );
@@ -336,9 +340,6 @@ class _LoginState extends State<Login> {
           context,
           message: 'email or password is wrong.',
           posActionTitle: "Try Again",
-          posAction: () {
-            Navigator.pop(context);
-          },
         );
       }
     } catch (e) {
@@ -361,7 +362,6 @@ class _LoginState extends State<Login> {
         message: "login successfully",
         posActionTitle: "ok",
         posAction: () {
-          Navigator.pop(context);
           Navigator.pushNamed(context, RoutesManager.mainLayout);
         },
       );
@@ -372,9 +372,6 @@ class _LoginState extends State<Login> {
           context,
           message: 'email or password is wrong.',
           posActionTitle: "Try Again",
-          posAction: () {
-            Navigator.pop(context);
-          },
         );
       }
     } catch (e) {
@@ -411,6 +408,10 @@ class _LoginState extends State<Login> {
         name: firebaseUser.displayName ?? "",
         email: firebaseUser.email ?? "",
         jobTitle: "",
+        joinedChats: [],
+        joinedCommunities: [],
+        roadmapId: "",
+        milestoneCompletionStatus: []
       );
       await FirebaseServices.addUserToFireStore(myUser);
       UserDM.currentUser = await FirebaseServices.getUserFromFireStore(

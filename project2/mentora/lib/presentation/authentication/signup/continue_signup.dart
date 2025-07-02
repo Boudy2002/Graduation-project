@@ -5,11 +5,12 @@ import 'package:mentora_app/core/routes_manager.dart';
 import 'package:mentora_app/core/widgets/arrow_back_icon.dart';
 import 'package:mentora_app/core/widgets/custom_elevated_button.dart';
 import 'package:mentora_app/core/widgets/custom_text_button.dart';
+import 'package:mentora_app/l10n/app_localizations.dart';
 import 'package:mentora_app/presentation/authentication/widgets/custom_date_row.dart';
 import 'package:mentora_app/presentation/authentication/widgets/custom_drop_down_menu.dart';
 import 'package:searchfield/searchfield.dart';
 import '../widgets/custom_text_form_field.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ContinueSignup extends StatefulWidget {
   const ContinueSignup({super.key});

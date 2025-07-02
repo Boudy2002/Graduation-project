@@ -7,7 +7,8 @@ import 'package:mentora_app/core/colors_manager.dart';
 import 'package:mentora_app/core/routes_manager.dart';
 import 'package:mentora_app/core/widgets/custom_elevated_button.dart';
 import 'package:mentora_app/core/widgets/custom_text_button.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart'; // For localization
+// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:mentora_app/l10n/app_localizations.dart'; // For localization
 
 class PredictedJobResult extends StatefulWidget {
   const PredictedJobResult({super.key});

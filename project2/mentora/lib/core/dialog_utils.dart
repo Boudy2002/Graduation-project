@@ -47,6 +47,7 @@ class DialogUtils{
       actions.add(
         TextButton(
           onPressed: () {
+            Navigator.pop(context);
             negAction?.call();
           },
           child: Text(negActionTitle, style: Theme.of(context).textTheme.headlineSmall,),

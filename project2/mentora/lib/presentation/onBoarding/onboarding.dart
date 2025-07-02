@@ -5,7 +5,9 @@ import 'package:mentora_app/core/assets_manager.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentora_app/core/colors_manager.dart';
 import 'package:mentora_app/core/routes_manager.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:mentora_app/data/DM/user_dm.dart';
+import 'package:mentora_app/l10n/app_localizations.dart';
+// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Onboarding extends StatelessWidget {
   const Onboarding({super.key});
@@ -37,7 +39,7 @@ class Onboarding extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(height: 18.h,),
-              Text(AppLocalizations.of(context)!.hi, style: Theme.of(context).textTheme.bodyLarge),
+              Text("${AppLocalizations.of(context)!.hi}${UserDM.currentUser!.name}", style: Theme.of(context).textTheme.bodyLarge),
               Text(AppLocalizations.of(context)!.welcome_to_our_lxp, style: Theme.of(context).textTheme.bodyMedium),
             ],
           )

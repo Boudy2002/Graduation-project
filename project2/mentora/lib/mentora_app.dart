@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentora_app/config/theme_manager/theme_manager.dart';
 import 'package:mentora_app/core/routes_manager.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:mentora_app/l10n/app_localizations.dart';
 import 'package:mentora_app/providers/config_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -24,7 +25,7 @@ class MentoraApp extends StatelessWidget {
         ],
         locale: Locale(configProvider.currentLang),
         routes: RoutesManager.routes,
-        initialRoute: RoutesManager.login,
+        home: RoutesManager.alreadyLogin(),
         theme: ThemeManager.light,
         darkTheme: ThemeManager.dark,
         themeMode: configProvider.currentTheme,

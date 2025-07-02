@@ -4,8 +4,9 @@ import 'package:mentora_app/core/colors_manager.dart';
 import 'package:mentora_app/core/routes_manager.dart';
 import 'package:mentora_app/core/widgets/arrow_back_icon.dart';
 import 'package:mentora_app/core/widgets/custom_elevated_button.dart';
+import 'package:mentora_app/l10n/app_localizations.dart';
 import 'package:searchfield/searchfield.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Occupation extends StatefulWidget {
   const Occupation({super.key});

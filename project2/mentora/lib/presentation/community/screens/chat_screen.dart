@@ -6,7 +6,7 @@ import '../widgets/message_bubble.dart';
 
 class ChatScreen extends StatefulWidget {
   final String chatPath; // e.g. "courses/courseId/chats" or "community_rooms/roomId/chats"
-  const ChatScreen({super.key, required this.chatPath});
+  const ChatScreen({super.key, required this.chatPath, required String communityId});
 
   @override
   State<ChatScreen> createState() => _ChatScreenState();
